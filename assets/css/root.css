@@ -5,14 +5,14 @@
     --fs-xl: 17px;
     --fs-2xl: 18px;
     --fs-3xl: 20px;
-    --fs-4xl: 21px;
+    --fs-4xl: 18px;
     --fs-5xl: 26px;
     --fs-6xl: 28px;
     --fs-7xl: 37px;
-    --fs-8xl: 38px;
+    --fs-8xl: 32px;
     --fs-9xl: 39px;
-    --fs-10xl: 68px;
-    --fs-11xl: 101px;
+    --fs-10xl: 48px;
+    --fs-11xl: 64px;
 
 
     --lh-15: 15px;
@@ -24,7 +24,7 @@
     --lh-33: 33px;
     --lh-46: 46px;
     --lh-75: 75px;
-    --lh-132: 132px;  
+    --lh-132: 100px;  
     
     
     --black-100:#111111;
@@ -32,6 +32,9 @@
     --gray-100:#1A1A1A;
     --gray-200:#848895;
     --gray-300:#BABABA;
+    --blue:#0047FF;
+    --sky:#00BCD4;
+    --purple:#8C01FA;
     
 }
 .black-denim{
@@ -77,8 +80,6 @@
 }
 
 
-
-
 .fs-sm{
     font-size: var(--fs-sm);
 }
@@ -122,6 +123,70 @@
     font-size: var(--fs-11xl);
 }
 
+
+@media (min-width:575px) {
+    :root {
+        --fs-sm: 12px;    
+        --fs-md: 15px;
+        --fs-lg: 16px;
+        --fs-xl: 17px;
+        --fs-2xl: 18px;
+        --fs-3xl: 20px;
+        --fs-4xl: 21px;
+        --fs-5xl: 26px;
+        --fs-6xl: 28px;
+        --fs-7xl: 37px;
+        --fs-8xl: 38px;
+        --fs-9xl: 39px;
+        --fs-10xl: 68px;
+        --fs-11xl: 101px;
+    
+    
+        --lh-15: 15px;
+        --lh-16: 16px;
+        --lh-18: 18px;
+        --lh-20: 20px;
+        --lh-27: 27px;
+        --lh-28: 28px;
+        --lh-33: 33px;
+        --lh-46: 46px;
+        --lh-75: 75px;
+        --lh-132: 132px;                          
+    }    
+}
+@media (min-width:992px) {
+    :root {
+        --fs-sm: 12px;    
+        --fs-md: 15px;
+        --fs-lg: 16px;
+        --fs-xl: 17px;
+        --fs-2xl: 18px;
+        --fs-3xl: 20px;
+        --fs-4xl: 21px;
+        --fs-5xl: 26px;
+        --fs-6xl: 28px;
+        --fs-7xl: 37px;
+        --fs-8xl: 38px;
+        --fs-9xl: 39px;
+        --fs-10xl: 68px;
+        --fs-11xl: 101px;
+    
+    
+        --lh-15: 15px;
+        --lh-16: 16px;
+        --lh-18: 18px;
+        --lh-20: 20px;
+        --lh-27: 27px;
+        --lh-28: 28px;
+        --lh-33: 33px;
+        --lh-46: 46px;
+        --lh-75: 75px;
+        --lh-132: 132px;  
+        
+        
+        
+    }    
+}
 
 
 
