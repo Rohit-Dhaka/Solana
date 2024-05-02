@@ -1,14 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solana</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
+
 <body>
-    <section>
-        
+    <section class="bg-black ">
+        <div class="container max-w-1140">
+            <div class="d-flex justify-content-between flex-md-nowrap flex-wrap">
+                <h2 class="text-white mb-0 fw-normal lh-46 fs-9xl font-helvetica">Build for growth.</h2>
+                <div class="d-flex gap-3 allbtn pt-md-0 pt-3 pb-sm-0 pb-3">
+                    <button onclick="clickhere('tab1')"
+                        class="tabbtn fw-normal lh-27 fs-md text-white  mb-0 font-helvetica">NFTs</button>
+                    <button onclick="clickhere('tab2')"
+                        class="tabbtn fw-normal lh-27 fs-md text-white  mb-0 font-helvetica">DeFi</button>
+                    <button onclick="clickhere('tab3')"
+                        class="tabbtn fw-normal lh-27 fs-md text-white  mb-0 font-helvetica">Payments</button>
+                    <button onclick="clickhere('tab4')"
+                        class="tabbtn fw-normal lh-27 fs-md text-white  mb-0 font-helvetica">Gaming</button>
+                    <button onclick="clickhere('tab5')"
+                        class="tabbtn fw-normal lh-27 fs-md text-white  mb-0 font-helvetica">DAOs</button>
+                </div>
+            </div>
+            <div id="tab1" class="mt-4 box tabcontant">
+                <div class="row align-items-center">
+                    <div class="tab-img col-md-6 col-12 ">
+                        <img src="./assets/images/IMAGE.webp" alt="IMAGE" class="w-100">
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="ps-md-5 px-4  py-md-0 py-4">
+                            <img src="./assets/images/svg/anybodies.svg" alt="anybodies">
+                            <h6 class="font-helvetica fw-normal lh-27 fs-4xl pt-14 text-white max-w-439 mb-0">It’s time
+                                to bridge the digital and physical. Anybodies helps established brands like Toys’R’Us
+                                connect real-life places and products with NFTs.</h6>
+                            <div class="pt-14">
+                                <a href="" class="font-helvetica fw-normal lh-27 fs-4xl  learn-more-link">Learn more
+                                    about NFTs on Solana</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab2" class="mt-4 box tabcontant">
+                <div class="row align-items-center">
+                    <div class="tab-img col-md-6 col-12 ">
+                        <img src="./assets/images/IMAGE.webp" alt="IMAGE" class="w-100">
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="ps-md-5 px-4  py-md-0 py-4">
+                            <img src="./assets/images/svg/anybodies.svg" alt="anybodies">
+                            <h6 class="font-helvetica fw-normal lh-27 fs-4xl pt-14 text-white max-w-439 mb-0">It’s time
+                                to bridge the digital and physical. Anybodies helps established brands like Toys’R’Us
+                                connect real-life places and products with DeFi.</h6>
+                            <div class="pt-14">
+                                <a href="" class="font-helvetica fw-normal lh-27 fs-4xl  learn-more-link">Learn more
+                                    about DeFi on Solana</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab3" class="mt-4 box tabcontant">
+                <div class="row align-items-center">
+                    <div class="tab-img col-md-6 col-12 ">
+                        <img src="./assets/images/IMAGE.webp" alt="IMAGE" class="w-100">
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="ps-md-5 px-4  py-md-0 py-4">
+                            <img src="./assets/images/svg/anybodies.svg" alt="anybodies">
+                            <h6 class="font-helvetica fw-normal lh-27 fs-4xl pt-14 text-white max-w-439 mb-0">It’s time
+                                to bridge the digital and physical. Anybodies helps established brands like Toys’R’Us
+                                connect real-life places and products with Payments.</h6>
+                            <div class="pt-14">
+                                <a href="" class="font-helvetica fw-normal lh-27 fs-4xl  learn-more-link">Learn more
+                                    about Payments on Solana</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab4" class="mt-4 box tabcontant">
+                <div class="row align-items-center">
+                    <div class="tab-img col-md-6 col-12 ">
+                        <img src="./assets/images/IMAGE.webp" alt="IMAGE" class="w-100">
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="ps-md-5 px-4  py-md-0 py-4">
+                            <img src="./assets/images/svg/anybodies.svg" alt="anybodies">
+                            <h6 class="font-helvetica fw-normal lh-27 fs-4xl pt-14 text-white max-w-439 mb-0">It’s time
+                                to bridge the digital and physical. Anybodies helps established brands like Toys’R’Us
+                                connect real-life places and products with Gaming.</h6>
+                            <div class="pt-14">
+                                <a href="" class="font-helvetica fw-normal lh-27 fs-4xl  learn-more-link">Learn more
+                                    about Gaming on Solana</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab5" class="mt-4 box tabcontant">
+                <div class="row align-items-center">
+                    <div class="tab-img col-md-6 col-12 ">
+                        <img src="./assets/images/IMAGE.webp" alt="IMAGE" class="w-100">
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="ps-md-5 px-4  py-md-0 py-4">
+                            <img src="./assets/images/svg/anybodies.svg" alt="anybodies">
+                            <h6 class="font-helvetica fw-normal lh-27 fs-4xl pt-14 text-white max-w-439 mb-0">It’s time
+                                to bridge the digital and physical. Anybodies helps established brands like Toys’R’Us
+                                connect real-life places and products with DAOs.</h6>
+                            <div class="pt-14">
+                                <a href="" class="font-helvetica fw-normal lh-27 fs-4xl  learn-more-link">Learn more
+                                    about DAOs on Solana</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="mini-box">
+                <div class="row mt-20  py-2">
+                    <div class="col-sm-3 col-6 d-flex justify-content-center">
+                        <img src="./assets/images/svg/logo1.svg" alt="logo1">
+                    </div>
+                    <div class="col-sm-3 col-6 d-flex justify-content-center">
+                        <img src="./assets/images/svg/logo2.svg" alt="logo1">
+                    </div>
+                    <div class="col-sm-3 col-6 pt-3 pt-sm-0 d-flex justify-content-center">
+                        <img src="./assets/images/svg/logo3.svg" alt="logo1">
+                    </div>
+                    <div class="col-sm-3 col-6 pt-3 pt-sm-0 d-flex justify-content-center">
+                        <img src="./assets/images/svg/logo4.svg" alt="logo1">
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
     </section>
-    
+    <section class="bg-black overflow-hidden bg-5 ">
+        <div class="container pt-122">
+            <h2 class="font-helvetica fw-normal lh-46 fs-8xl text-white mb-0">Join a thriving community.</h2>
+        </div>
+        <div class="d-flex gap-20 pt-35 firstslider">
+            <div class="d-flex flex-column">
+                <div class="first-slider-box w-100 d-flex justify-content-center align-items-center flex-column">
+                    <h4 class="mb-0 font-helvetica lh-46 fs-7xl text-white pb-9">11,000</h4>
+                    <h6 class="mb-0 font-helvetica fw-normal lh-15 fs-sm gray-300">Solana Hacker House participants</h6>
+                </div>
+                <div class="slider-min-img pt-20">
+                    <img src="./assets/images/IMAGE(1).webp" alt="IMAGE" class="w-100">
+                </div>
+            </div>
+            <div class="slider-big-img">
+                <img src="./assets/images/Frame.webp" alt="Frame" class="w-100">
+            </div>
+            <div class="d-flex flex-column">
+                <div class="slider-min-img ">
+                    <img src="./assets/images/Frame(1).webp" alt="Frame" class="w-100">
+                </div>
+                <div class="first-slider-box w-100 d-flex justify-content-center align-items-center flex-column mt-20">
+                    <h4 class="mb-0 font-helvetica lh-46 fs-7xl text-white pb-9">48,000</h4>
+                    <h6 class="mb-0 font-helvetica fw-normal lh-15 fs-sm gray-300 max-w-195 text-center">Developers
+                        building during Solana Hackathons</h6>
+                </div>
+            </div>
+            <div class="slider-mid-img">
+                <img src="./assets/images/Frame(2).webp" alt="Frame">
+            </div>
+            <div class="d-flex flex-column">
+                <div class="first-slider-box w-100 d-flex justify-content-center align-items-center flex-column">
+                    <h4 class="mb-0 font-helvetica lh-46 fs-7xl text-white pb-9">3,800</h4>
+                    <h6 class="mb-0 font-helvetica fw-normal lh-15 fs-sm gray-300">Solana Breakpoint 2022 attendees</h6>
+                </div>
+                <div class="slider-min-img pt-20 w-100">
+                    <img src="./assets/images/Frame(3).png" alt="Frame" class="w-100">
+                </div>
+            </div>
+            <div class="slider-big-img">
+                <img src="./assets/images/Frame.webp" alt="Frame" class="w-100">
+            </div>
+        </div>
+        <div class="d-flex flex-column justify-content-center align-items-center pt-125 pb-208">
+            <h2 class="font-helvetica fw-normal lh-46 fs-8xl mb-0 text-white  max-w-736 text-center">It's time to join
+                the thousands of creators, artists, and developers using Solana.</h2>
+            <button class="start-btn text-white font-Roboto fw-normal lh-20 fs-md mt-18">Start building</button>
+        </div>
+    </section>
+    <footer class="black-denim">
+        <div class="container max-w-1100">
+            <div class="row pt-80 pb-81 ">
+                <div class="col-lg-7">
+                    <img src="./assets/images/svg/footerlogo.svg" alt="logo">
+                    <h6 class="fw-normal lh-27 fs-lg text-white pt-20 font-Roboto mb-0">Managed by Solana Foundation
+                    </h6>
+                    <div class="pt-24 pb-29 d-flex gap-10">
+                        <a href="https://www.youtube.com/" target="_blank"
+                            class="social-media d-flex justify-content-center align-items-center transition-300"><img
+                                src="./assets/images/svg/youtube.svg" alt="youtube"></a>
+
+                        <a href="https://twitter.com/?lang=en" target="_blank"
+                            class="social-media d-flex justify-content-center align-items-center transition-300"><img
+                                src="./assets/images/svg/twitter.svg" alt="twitter"></a>
+
+                        <a href="https://discord.com/channels/984345847628181504/999268522427437086" target="_blank"
+                            class="social-media d-flex justify-content-center align-items-center transition-300"><img
+                                src="./assets/images/svg/discord.svg" alt="discord"></a>
+
+                        <a href="https://www.reddit.com/" target="_blank"
+                            class="social-media d-flex justify-content-center align-items-center transition-300 rounded-100"><img
+                                src="./assets/images/svg/reddit.svg" alt="reddit"></a>
+
+                        <a href="https://github.com/" target="_blank"
+                            class="social-media d-flex justify-content-center align-items-center transition-300"><img
+                                src="./assets/images/svg/github.svg" alt="github"></a>
+
+                        <a href="https://telegram.org/" target="_blank"
+                            class="social-media d-flex justify-content-center align-items-center transition-300"><img
+                                src="./assets/images/svg/telegram.svg" alt="telegram"></a>
+
+
+                    </div>
+
+                    <h6 class="mb-0 gray-200 fw-normal lh-27 fs-lg font-Roboto font-helvetica">© <span id="year">
+                        </span> Solana Foundation. All rights reserved.</h6>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6 pt-4 pt-lg-0">
+                    <ul class="d-flex flex-column gap-11 p-0 m-0">
+                        <li class="fw-normal lh-18 fs-lg text-white font-helvetica">Solana</li>
+                        <li><a href=""
+                                class="fw-normal lh-27 fs-md gray-200 font-helvetica position-relative underline ">Grants</a>
+                        </li>
+                        <li><a href=""
+                                class="fw-normal lh-27 fs-md gray-200 font-helvetica position-relative underline">Break
+                                Solana</a></li>
+                        <li><a href=""
+                                class="fw-normal lh-27 fs-md gray-200 font-helvetica position-relative underline">Media
+                                Kit</a></li>
+                        <li><a href=""
+                                class="fw-normal lh-27 fs-md gray-200 font-helvetica position-relative underline">Careers</a>
+                        </li>
+                        <li><a href=""
+                                class="fw-normal lh-27 fs-md gray-200 font-helvetica position-relative underline">Disclaimer</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6 pt-4 pt-lg-0">
+                    <ul class="d-flex flex-column gap-11 p-0 m-0">
+                        <li class="fw-normal lh-18 fs-lg text-white font-helvetica">Get Connected</li>
+                        <li><a href=""
+                                class="fw-normal lh-27 fs-md gray-200 font-helvetica position-relative underline">Ecosystem</a>
+                        </li>
+                        <li><a href=""
+                                class="fw-normal lh-27 fs-md gray-200 font-helvetica position-relative underline">Blog</a>
+                        </li>
+                        <li><a href=""
+                                class="fw-normal lh-27 fs-md gray-200 font-helvetica position-relative underline">Newsletter</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-1 col-sm-4 col-12 pt-4 pt-lg-0   d-flex justify-content-lg-end">
+                    <div class="d-flex gap-1 cursor-pointer align-items-start">
+                        <img src="./assets/images/svg/world-icon.svg" alt="world-icon">
+                        <h6 class="mb-0 fw-normal lh-24 font-helvetica gray-200">EN</h6>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script>
+        const d = new Date();
+        let year = d.getFullYear();
+        document.getElementById("year").innerHTML = year
+    </script>
+    <script>
+        // --------slider
+        $('.firstslider').slick({
+
+            autoplay: true,
+            autoplaySpeed: 0,
+            speed: 8000,
+            pauseOnHover: true,
+            cssEase: 'linear',
+            infinite: true,
+            dots: false,
+            variableWidth: true,
+
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            // responsive: [
+            //     {
+            //         breakpoint: 1024,
+            //         settings: {
+            //             slidesToShow: 1,
+            //             slidesToScroll: 1,
+            //             infinite: true,
+            //             autoplay: true,
+            //             cssEase: 'linear'
+
+            //         }
+            //     },
+            //     {
+            //         breakpoint: 600,
+            //         settings: {
+            //             slidesToShow: 1,
+            //             slidesToScroll: 1,
+            //             autoplay: true,
+            //             cssEase: 'linear'
+            //         }
+            //     },
+            //     {
+            //         breakpoint: 480,
+            //         settings: {
+            //             slidesToShow: 1,
+            //             slidesToScroll: 1,
+            //             autoplay: true,
+            //             cssEase: 'linear'
+            //         }
+            //     }
+            // ]
+        });
+
+        const tabcontant = document.querySelectorAll(".tabcontant");
+        const firstcontant = document.querySelector(".tabcontant");
+        const fistactivetab = document.querySelector(".allbtn button");
+        tabcontant.forEach(e => e.style.display = "none");
+        firstcontant.style.display = "block";
+        fistactivetab.classList.add("active");
+        function clickhere(tabs) {
+            tabcontant.forEach(e => e.style.display = "none");
+            const selectcontant = document.getElementById(tabs)
+            selectcontant.style.display = "block";
+            const tabsactive = document.querySelectorAll(".allbtn button")
+            tabsactive.forEach(e => e.classList.remove("active"))
+            const selecttab = document.querySelector(`button[onclick="clickhere('${tabs}')"]`)
+            selecttab.classList.add("active")
+        }
+    </script>
+
 </body>
+
 </html>

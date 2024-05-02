@@ -24,7 +24,25 @@
     --lh-33: 33px;
     --lh-46: 46px;
     --lh-75: 75px;
-    --lh-132: 132px;                                            
+    --lh-132: 132px;  
+    
+    
+    --black-100:#111111;
+    --black-denim:#000508;
+    --gray-100:#1A1A1A;
+    --gray-200:#848895;
+    --gray-300:#BABABA;
+    
+}
+.black-denim{
+    background-color: var(--black-denim);
+}
+
+.gray-300{
+    color: var(--gray-300);
+}
+.gray-200{
+    color: var(--gray-200);
 }
 
 .lh-15{
