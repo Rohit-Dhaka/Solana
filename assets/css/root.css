@@ -28,18 +28,37 @@
     
     
     --black-100:#111111;
+    --black-200:#19161C;
     --black-denim:#000508;
     --gray-100:#1A1A1A;
+    --white: #FFF;
     --gray-200:#848895;
     --gray-300:#BABABA;
     --blue:#0047FF;
     --sky:#00BCD4;
     --purple:#8C01FA;
+    --pink-Fever:#A962FF;
+    --pink: #F087FF;
+    --green-100: #19FB9B;
+    --yellow: #FFEB3B;
+    
     
 }
-.black-denim{
-    background-color: var(--black-denim);
+.color-sky{
+    color: var(--sky);
 }
+.color-yellow{
+    color: var(--yellow);
+}
+.color-green{
+    color: var(--green-100);
+}
+.color-pink{
+    color: var(--pink);
+}
+    .black-denim{
+        background-color: var(--black-denim);
+    }
 
 .gray-300{
     color: var(--gray-300);
