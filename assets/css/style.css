@@ -201,9 +201,9 @@
 
 /* --------------------------------slider */
 .background-last-section-img {
-  background-image: url(../images/background.webp);
+  background-image: url(../images/background.jpg);
   background-repeat: no-repeat;
-  background-size: 1200px 614px;
+  background-size: 1200px 100%;
   background-position: bottom;
 }
 
