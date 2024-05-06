@@ -283,18 +283,26 @@
 }
 
 .dropdown-content {
-  display: none;
+  display: no ne;
   position: absolute;
   right: 1px;
+  display: none;
+  flex-direction: column;
   padding-left: 4px;
   background-color: var(--black-100);
-  opacity: 80%;
+  /* opacity: 80%; */
   width: 100%;
+
   z-index: 1;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: flex;
+}
+.dropdown-text:hover{
+  color: black !important;
+  background-color: white;
+  
 }
 
 .header_pra_1 {

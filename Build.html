@@ -1,0 +1,1805 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shgiortcut icon" href="./assets/image/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/images/svg/footerlogo.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Solana</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<style>
+   
+    
+    .bg_color_black {
+        background-color: #000000;
+    }
+
+    .nav-bg {
+        background-color: #01080B;
+        top: 0;
+        width: 100%;
+        z-index: 50;
+    }
+
+    .webkit {
+        -webkit-text-stroke: white;
+        transition: all linear 400ms;
+    }
+
+    .webkit:hover {
+        -webkit-text-stroke: 0.5px white;
+        color: var(--color-emphasis-);
+        transition: all linear 400ms;
+    }
+
+
+
+    .max-w-1240{
+        max-width: 1240px !
+        ;
+    } 
+    
+
+    .bg_breakpoint {
+        background: linear-gradient(260.33deg, #0047FF -13.37%, #00BCD4 109.53%);
+
+    }
+
+    .text_gray {
+        color: rgba(132, 136, 149, 1);
+    }
+
+    .text_gray:hover {
+        color: white;
+    }
+
+    .dropbtn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 1px;
+        padding-left: 4px;
+        background-color: #010002;
+        opacity: 80%;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .mw_391 {
+        max-width: 391px;
+    }
+
+    .bulid_now_btn {
+        color: black;
+        border: 1px solid transparent;
+        background-color: #14F195;
+        padding: 12px 21px;
+        border-radius: 24px;
+        border: 1px solid transparent;
+        transition: .6s;
+    }
+
+    .bulid_now_btn:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid white;
+        transition: .6s;
+    }
+
+
+
+    .stack_exchange_btn {
+        color: white;
+        border: 1px solid white;
+        border-radius: 24px;
+        background-color: transparent;
+        padding: 12px 21px;
+        transition: .6s;
+    }
+
+    .stack_exchange_btn:hover {
+        background-color: #fff;
+        color: #000;
+        transition: .6s;
+    }
+
+
+    .ellipe_1 {
+        max-width: 633px;
+        height: 642px;
+        border-radius: 100px;
+        filter: blur(100px);
+        background-color: rgba(146, 94, 153, 0.3);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+
+    .chapters_17 {
+        background: rgba(153, 69, 255, 1);
+        border-radius: 16px;
+        padding-left: 11px;
+        padding-right: 11px;
+    }
+
+    .mw_395 {
+        max-width: 395px;
+    }
+
+    .bg_image_section_2 {
+        /* background-image: url(../image/img_2.png); */
+        background-image: url(./assets/images/img_2.png);
+        background-size: 100% 100%;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-left: 70px;
+    }
+
+    .box_bg_img {
+        /* background-image: url(../image/box_img.png); */
+        background-image: url(./assets/images/box_img.png);
+        background-size: 100% 100%;
+        padding-bottom: 40px;
+        padding-left: 31px;
+        padding-right: 18px;
+        min-height: 346px;
+    }
+
+    .responsive .slick-slide {
+        margin: 0 24px;
+    }
+
+
+    .responsive .slick-list {
+        margin: 0 -24px;
+    }
+
+
+    #preloader {
+        background: black;
+        backdrop-filter: blur(25px);
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+    }
+
+    .loader {
+        background: url(../image/preloader.htm) center no-repeat;
+
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+        top: 20px;
+    }
+
+    .loader_2 {
+        background: url(../image/navbar_logo.png) center no-repeat;
+
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+        top: 200px;
+    }
+
+    .pulse:hover,
+    .pulse:focus {
+        animation: pulse 1s;
+        box-shadow: 0 0 0 1em transparent;
+    }
+
+    @keyframes pulse {
+        0% {
+            box-shadow: 0 0 0 0 white;
+        }
+    }
+
+    .pulse {
+        animation: pulse 2s infinite;
+        transition: .8s;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+
+        70% {
+            transform: scale(.9);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 49;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border: 1px solid white;
+        border-radius: 50px;
+        transition: all 400ms linear;
+    }
+
+
+
+    @media (max-width:992px) {
+        .mobile_view {
+            position: fixed;
+            backdrop-filter: blur(40px);            
+            height: 100vh;
+            width: 100%;
+            top: 0;
+            left: -100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: all 400ms linear;            
+            z-index: 4;
+        }
+
+        .menu {
+
+            z-index: 80;
+        }
+
+        .overflow_hidden {
+            overflow: hidden;
+        }
+
+        .menu span:nth-child(1) {
+            height: 4px;
+            width: 35px;
+            background: white;
+            display: block;
+            border-radius: 30px;
+        }
+
+        .menu span:nth-child(2) {
+            height: 4px;
+            width: 35px;
+            background: white;
+            display: block;
+            border-radius: 30px;
+        }
+
+        .menu span:nth-child(3) {
+            height: 4px;
+            width: 35px;
+            background: white;
+            display: block;
+            border-radius: 30px;
+        }
+
+        .menu span {
+            transition: 300ms linear;
+        }
+
+        .cross span:nth-child(1) {
+            transform: rotate(42deg) translateY(16px);
+            transition: 300ms linear;
+        }
+
+        .cross span:nth-child(2) {
+            transform: translateX(-100%);
+            opacity: 0;
+            transition: 10ms linear;
+        }
+
+        .cross span:nth-child(3) {
+            transform: rotate(-43deg) translateY(-16px);
+            transition: 300ms linear;
+        }
+
+        .right {
+            left: 0%;
+        }
+
+    }
+
+    @media (max-width:576px) {
+        .bg_image_section_2 {
+            background-image: url(../images/img_2.png);
+            background-size: cover;
+            padding-top: 80px;
+            padding-bottom: 20px;
+            padding-left: 10px;
+        }
+
+        .box_bg_img {
+            background-image: url(../images/box_img.png);
+            background-size: 100% 100%;
+            padding-bottom: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
+            min-height: 300px;
+        }
+    }
+
+
+
+    /* rohit-code */
+    .social-media {
+        width: 26px;
+        height: 16px;
+        background-color: var(--gray-200);
+        display: block;
+    }
+
+    .social-media:hover {
+        transform: translateY(-6px);
+    }
+
+    .transition-300 {
+        transition: all 300ms linear;
+    }
+
+    .pt-24 {
+        padding-top: 24px;
+    }
+
+    .pb-29 {
+        padding-bottom: 29px;
+    }
+
+    .gap-10 {
+        gap: 10px !important;
+    }
+
+    .-mt-1 {
+        margin-top: -1px;
+    }
+
+    .max-w-1100 {
+        max-width: 1100px !important;
+    }
+
+    .pt-20 {
+        padding-top: 20px;
+    }
+
+    .gap-11 {
+        gap: 11px;
+    }
+
+    .underline::after {
+        content: '';
+        position: absolute;
+        background-color: var(--gray-200);
+        height: 1px;
+        width: 0;
+        bottom: -1px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        transition: all 300ms linear;
+        display: inline-block;
+    }
+
+    .underline:hover::after {
+        width: 100%;
+    }
+
+    .cursor-pointer {
+        cursor: pointer;
+    }
+
+    .pt-76 {
+        padding-top: 76px;
+    }
+
+    .view-btn {
+        padding: 12px 20px 14px 21px;
+        border: 1px solid var(--white);
+        border-radius: 24px;
+    }
+
+    .view-btn:hover {
+        background: var(--sky-100) !important;
+        color: var(--black) !important;
+        border: 1px solid var(--sky-100);
+    }
+
+    .view-btn:hover img {
+        transform: rotate(45deg);
+    }
+
+    .bottom-border {
+        border-bottom: 1px solid var(--gray-300);
+    }
+
+    .pb-31 {
+        padding-bottom: 31px;
+    }
+
+    .pt-30 {
+        padding-top: 30px;
+    }
+
+    .pt-144 {
+        padding-top: 144px;
+    }
+
+    .pt-29 {
+        padding-top: 29px;
+    }
+
+    .mt-57 {
+        margin-top: 57px;
+    }
+
+    .latest-btn {
+        padding: 1px 21px 3px 20px;
+        border: 1px solid var(--white);
+        border-radius: 24px;
+    }
+
+    .last-section-box {
+        background-color: var(--light-black);
+        box-shadow: 0px 58px 80px 0px #00000029;
+        border-radius: 14px;
+        padding: 30px;
+    }
+
+    .pt-29 {
+        padding-top: 29px;
+    }
+
+    .outline-none {
+        outline: none;
+    }
+
+    .sign-btn {
+        padding: 12px 20px;
+        background-color: var(--sky-100);
+        border-radius: 40px;
+        border: 1px solid var(--black);
+    }
+
+    .sign-btn:hover {
+        border: 1px solid var(--white);
+        background: var(--black);
+        color: var(--white) !important;
+    }
+
+    .pb-79 {
+        padding-bottom: 79px;
+    }
+
+    .pb-80 {
+        padding-bottom: 80px;
+    }
+
+    .gap-22 {
+        gap: 22px;
+    }
+
+    .media-btn {
+        border: 1px solid var(--white);
+        padding: 12px 40px;
+        border-radius: 24px;
+    }
+
+    .pb-60 {
+        padding-bottom: 60px;
+    }
+
+    .pt-32 {
+        padding-top: 32px;
+    }
+
+    .min-box {
+        background-color: var(--light-black);
+        border-radius: 12px;
+        padding: 20px;
+    }
+
+    .pt-14 {
+        padding-top: 14px;
+    }
+
+    .pt-60 {
+        padding-top: 60px;
+
+    }
+
+    .pb-60 {
+        padding-bottom: 60px;
+
+    }
+
+    .Ellipse1 {
+        bottom: 0;
+        left: 0;
+        transition: all 300ms linear;
+    }
+
+    .min-box:hover .Ellipse1 {
+        opacity: 1 !important;
+    }
+
+    .latest-btn:hover {
+        background-color: var(--sky-100) !important;
+        border: 1px solid var(--sky-100);
+        color: var(--black) !important;
+    }
+
+    .latest-btn:hover img {
+        transform: rotate(45deg);
+    }
+
+    .media-btn:hover {
+        background: var(--sky-100) !important;
+        border: 1px solid var(--sky-100) !important;
+        color: var(--black) !important;
+    }
+
+    .gradient-box {
+        background: linear-gradient(180deg, var(--light-black) 0%, var(--black) 100%);
+        height: 800px;
+        top: 0;
+    }
+
+    .pb-60 {
+        padding-bottom: 60px;
+    }
+
+    .pt-60 {
+        padding-top: 60px;
+    }
+
+    @media (max-width:574.98px) {
+        .input-text {
+            padding: 13px 20px;
+            background: var(--black) !important;
+            border-radius: 40px;
+        }
+    }
+
+    @media (min-width:575px) {
+        .pt-sm-80 {
+            padding-top: 80px !important;
+        }
+
+        .pb-sm-81 {
+            padding-bottom: 81px !important;
+        }
+
+        .min-box {
+            padding: 31px 31px 34px !important;
+            height: 282px !important;
+        }
+
+        .sign-btn {
+            max-width: 103px !important;
+        }
+
+        .input-box {
+            padding: 9px 10px 9px 22px;
+            border-radius: 40px;
+            background: var(--black);
+        }
+
+        .pt-sm-133 {
+            padding-top: 133px !important;
+        }
+    }
+
+    @media (min-width:768px) {
+        .max-w-md-522 {
+            max-width: 522px !important;
+        }
+
+        .max-w-md-393 {
+            max-width: 393px !important;
+        }
+
+        .max-w-md-503 {
+            max-width: 503px !important;
+        }
+
+        .last-section-box {
+            height: 460px !important;
+            padding: 35px !important;
+        }
+
+        .max-w-md-400 {
+            max-width: 400px !important;
+        }
+    }
+
+    @media (min-width:992px) {
+        .pb-lg-100 {
+            padding-bottom: 100px !important;
+        }
+
+        .last-section-box {
+            padding: 52px 54px 45px !important;
+            height: 357px !important;
+        }
+    }
+
+    /* rohit--code */
+
+
+    :root {
+        --fs-11-: 11px;
+        --fs-12-: 12px;
+        --fs-xsm-: 15px;
+        --fs-xxsm-: 16px;
+        --fs-sm-: 17px;
+        --fs-xmd-: 18px;
+        --fs-md-: 20px;
+        --fs-xlg-: 21px;
+        --fs-xxlg-: 32px;
+        --fs-lg-: 36px;
+        --fs-xl-: 38px;
+        --fs-xxl-: 48px;
+        --fs-xxxl-: 94px;
+
+        --line-15: 15px;
+        --line-21: 21px;
+        --line-23: 23px;
+        --line-24: 24px;
+        --line-25: 25px;
+        --line-27: 27px;
+        --line-28: 28px;
+        --line-30: 30px;
+        --line-32: 32px;
+        --line-35: 35px;
+        --line-36: 36px;
+        --line-37: 37px;
+        --line-42: 42px;
+        --line-56: 56px;
+        --line-75: 75px;
+
+        --black-denim: #000508;
+        --black: #000;
+        --light-black: #19161C;
+        --gray-200: #848895;
+        --gray-100: #C4C4C4;
+        --gray-300: #878688;
+        --purple: #9945FF;
+        --sky-100: #14F195;
+        --white: #FFF;
+
+    }
+
+    .color-purple {
+        color: var(--purple);
+    }
+
+    .gray-100 {
+        color: var(--gray-100);
+    }
+
+    .black-denim {
+        background-color: var(--black-denim);
+    }
+
+    .gray-200 {
+        color: var(--gray-200);
+        --line-96: 96px;
+
+    }
+
+    .fs-11 {
+        font-size: var(--fs-11-);
+    }
+
+    .fs-12 {
+        font-size: var(--fs-12-);
+    }
+
+    .fs-15 {
+        font-size: var(--fs-xsm-);
+    }
+
+    .fs-16 {
+        font-size: var(--fs-xxsm-);
+    }
+
+    .fs-17 {
+        font-size: var(--fs-sm-);
+    }
+
+    .fs-18 {
+        font-size: var(--fs-xmd-);
+    }
+
+    .fs-20 {
+        font-size: var(--fs-md-);
+    }
+
+    .fs-21 {
+        font-size: var(--fs-xlg-);
+    }
+
+    .fs-32 {
+        font-size: var(--fs-xxlg-);
+    }
+
+    .fs-36 {
+        font-size: var(--fs-lg-);
+    }
+
+    .fs-38 {
+        font-size: var(--fs-xl-);
+    }
+
+    .fs-48 {
+        font-size: var(--fs-xxl-);
+    }
+
+    .fs-94 {
+        font-size: var(--fs-xxxl-);
+    }
+
+    .line-15 {
+        line-height: var(--line-15);
+    }
+
+    .line-21 {
+        line-height: var(--line-21);
+    }
+
+    .line-23 {
+        line-height: var(--line-23);
+    }
+
+    .line-24 {
+        line-height: var(--line-24);
+    }
+
+    .line-25 {
+        line-height: var(--line-25);
+    }
+
+    .line-27 {
+        line-height: var(--line-27);
+    }
+
+    .line-28 {
+        line-height: var(--line-28);
+    }
+
+    .line-30 {
+        line-height: var(--line-30);
+    }
+
+    .line-32 {
+        line-height: var(--line-32);
+    }
+
+    .line-35 {
+        line-height: var(--line-35);
+    }
+
+    .line-36 {
+        line-height: var(--line-36);
+    }
+
+    .line-37 {
+        line-height: var(--line-37);
+    }
+
+    .line-42 {
+        line-height: var(--line-42);
+    }
+
+    .line-56 {
+        line-height: var(--line-56);
+    }
+
+    .line-96 {
+        line-height: var(--line-96);
+    }
+
+    @media (max-width:992px) {
+        :root {
+            --fs-11-: 11px;
+            --fs-12-: 12px;
+            --fs-xsm-: 15px;
+            --fs-xxsm-: 16px;
+            --fs-sm-: 17px;
+            --fs-xmd-: 18px;
+            --fs-md-: 20px;
+            --fs-xlg-: 21px;
+            --fs-xxlg-: 28px;
+            --fs-lg-: 32px;
+            --fs-xl-: 36px;
+            --fs-xxl-: 45px;
+            --fs-xxxl-: 80px;
+        }
+    }
+
+    @media (max-width:768px) {
+        :root {
+            --fs-11-: 9px;
+            --fs-12-: 10px;
+            --fs-xsm-: 12px;
+            --fs-xxsm-: 14px;
+            --fs-sm-: 15px;
+            --fs-xmd-: 16px;
+            --fs-md-: 18px;
+            --fs-xlg-: 20px;
+            --fs-xxlg-: 22px;
+            --fs-lg-: 24px;
+            --fs-xl-: 26px;
+            --fs-xxl-: 28px;
+            --fs-xxxl-: 32px;
+        }
+    }
+</style>
+
+<body class="bg_color_black ">
+    <header>
+        <nav class="nav-bg ">
+            <div class="bg_breakpoint">
+                <p class="mb-0 font-Roboto fs-17 fw-normal text-black line-27  text-center py-2">
+                    Breakpoint 2023 - New City. New Vibes - Get Early Access ->
+                </p>
+            </div>
+            <div class="container max-w-1240">
+                <div class="d-flex align-items-center justify-content-between py-3">
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="pe-1">
+                            <img src="./assets/images/navbar_logo.png" alt="#">
+                        </div>
+                    </div>
+                    <div class="menu  cursor-pointer" onclick="openNav()">
+
+                        <span></span>
+                        <span class="my-2"></span>
+                        <span></span>
+                    </div>
+                    <div class="mobile_view d-flex justify-content-center align-content-center" id="navbar">
+                        <div
+                            class="d-flex flex-lg-row flex-column  p-0 mb-0 justify-content-center  gap-5 align-items-center ">
+                            <div class="dropdown">
+                                <button class="dropbtn mb-0 font-helvetica fw-normal fs-17 line-27 text_gray text-center">
+                                    Learn <span class="ms-1"><svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 0.5L5 4.5L9 0.5" stroke="white" />
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div class="dropdown-content dropdown_bg">
+                                    <a class="mb-0 font-helvetica fw-normal fs-17 text_gray line-27  text-center dropdown-text transition-300"
+                                        href="#">
+                                        Action </a>
+                                    <a class="mb-0 font-helvetica fw-normal fs-17 text_gray  line-27 text-center dropdown-text transition-300"
+                                        href="#">
+                                        Learn</a>
+                                    <a class="mb-0 font-helvetica fw-normal fs-17 text_gray  line-27 text-center dropdown-text transition-300"
+                                        href="#">
+                                        Build</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button class="dropbtn mb-0 font-helvetica fw-normal line-27 fs-17 text_gray text-center">
+                                    Build <span class="ms-1"><svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 0.5L5 4.5L9 0.5" stroke="white" />
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div class="dropdown-content dropdown_bg">
+                                    <a class="mb-0 font-helvetica fw-normal fs-17 text_gray line-27 text-center dropdown-text transition-300" href="#">
+                                        Action </a>
+                                    <a class="mb-0 font-helvetica fw-normal fs-17 text_gray line-27 text-center dropdown-text transition-300" href="#">
+                                        Learn</a>
+                                    <a class="mb-0 font-helvetica fw-normal fs-17 text_gray line-27 text-center dropdown-text transition-300" href="#">
+                                        Build</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button class="dropbtn mb-0 font-helvetica fw-normal line-27 fs-17 text_gray text-center">
+                                    Network <span class="ms-1"><svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 0.5L5 4.5L9 0.5" stroke="white" />
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div class="dropdown-content dropdown_bg">
+                                    <a class="mb-0 font-helvetica fw-normal fs-17 line-27 text_gray text-center dropdown-text transition-300" href="#">
+                                        Action </a>
+                                    <a class="mb-0 font-helvetica fw-normal fs-17 line-27 text_gray text-center dropdown-text transition-300" href="#">
+                                        Learn</a>
+                                    <a class="mb-0 font-helvetica fw-normal fs-17 line-27 text_gray text-center dropdown-text transition-300" href="#">
+                                        Build</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button class="dropbtn mb-0 font-helvetica fw-normal line-27 fs-17 text_gray text-center">
+                                    Community <span class="ms-1"><svg width="10" height="6" viewBox="0 0 10 6"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 0.5L5 4.5L9 0.5" stroke="white" />
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div class="dropdown-content dropdown_bg">
+                                    <a class="mb-0 font-helvetica fw-normal line-27 fs-17 text_gray text-start dropdown-text transition-300" href="#">
+                                        Action <br></a>
+                                    <a class="mb-0 font-helvetica fw-normal line-27 fs-17 text_gray text-start dropdown-text transition-300" href="#">
+                                        Learn <br></a>
+                                    <a class="mb-0 font-helvetica fw-normal line-27 fs-17 text_gray text-start dropdown-text transition-300" href="#">
+                                        Build</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <div class="container max-w-1240 py-5">
+            <div class="row pt-5">
+                <div
+                    class="col-12 col-lg-6 mt-5 pt-5 d-flex flex-column justify-content-lg-start justify-content-center align-items-center align-items-lg-start">
+                    <h1 class="mb-0 font-helvetica fs-94 line-96 fw-normal text-white text-lg-start text-center">
+                        Developer Resources
+                    </h1>
+                    <p
+                        class="mb-0 font-helvetica fs-21 fw-normal text_gray mw_391 line-24 pt-2 text-lg-start text-center">
+                        A manual for joining the Solana ecosystem. By builders for builders.
+                    </p>
+                    <div class="mt-5 d-flex gap-3">
+                        <button class="mb-0 font-Roboto fw-normal fs-15 line-21 bulid_now_btn">
+                            BUILD NOW
+                        </button>
+                        <button class="mb-0 font-Roboto fw-normal fs-15 line-21 stack_exchange_btn ">
+                            STACK EXCHANGE <span><svg width="16" height="19" viewBox="0 0 16 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.882812 12.3185H15.6221V13.1043C15.6221 14.4507 14.5757 15.5328 13.29 15.5328H12.6114L9.51138 18.7364V15.5328H3.21496C1.92924 15.5328 0.882812 14.4507 0.882812 13.1043V12.3185ZM0.882812 11.4757H15.6221V8.43997H0.882812V11.4757ZM0.882812 7.56854H15.6221V4.53283H0.882812V7.56854ZM13.2864 0.450684H3.21496C1.92924 0.450684 0.882812 1.53283 0.882812 2.86854V3.66497H15.6221V2.86854C15.6185 1.53283 14.5721 0.450684 13.2864 0.450684Z"
+                                        fill="#848895" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="position-relative">
+                        <img class="w-100" src="./assets/images/img_1.png" alt="#">
+                        <div class="ellipe_1 w-100"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="overflow-hidden">
+        <div class="container max-w-1240 py-5">
+            <h3 class="mb-0 font-helvetica fs-38 fw-normal line-42 text-white" data-aos="fade-right" data-aos-once="true"
+                data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                Get started.
+            </h3>
+            <p class="mb-0 font-helvetica fs-20 fw-normal line-27 text_gray pt-1" data-aos="fade-right"
+                data-aos-once="true" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                Use these Solana Foundation and community courses to begin your journey into Solana development.
+            </p>
+            <div class="bg_image_section_2 mt-5" data-aos="fade-left" data-aos-once="true" data-aos-duration="2000"
+                data-aos-easing="ease-out-cubic">
+                <span class="mb-0 font-helvetica fs-11 fw-normal  text-white chapters_17" data-aos="fade-right"
+                    data-aos-once="true" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                    17 Chapters
+                </span>
+                <h4 class="mb-0 font-helvetica fs-38 fw-normal line-42 text-white pt-2 pb-4" data-aos="fade-right"
+                    data-aos-once="true" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                    Solana Development Course
+                </h4>
+                <p class="mb-0 font-helvetica fs-18 fw-normal line-27 text-white mw_395 pb-4" data-aos="fade-right"
+                    data-aos-once="true" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                    Quickstart your Solana development starting from nothing to complex programs.
+                </p>
+                <span>
+                    <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.0801 27.5C21.9836 27.5 27.5801 21.9036 27.5801 15C27.5801 8.09644 21.9836 2.5 15.0801 2.5C8.17652 2.5 2.58008 8.09644 2.58008 15C2.58008 21.9036 8.17652 27.5 15.0801 27.5Z"
+                            stroke="#848895" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M15.0801 20L20.0801 15L15.0801 10" stroke="#848895" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M10.0801 15H20.0801" stroke="#848895" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                </span>
+            </div>
+            <div class="row pt-4 d-lg-flex d-none">
+                <div class="col-12 col-lg-4 col-sm-6">
+                    <div class="box_bg_img d-flex flex-column justify-content-end" data-aos="fade-right"
+                        data-aos-once="true" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                        <div class="pb-3">
+                            <span class="mb-0 font-helvetica fs-11 fw-normal text-white chapters_17">
+                                14 Chapters
+                            </span>
+                        </div>
+                        <div class=" d-flex justify-content-between">
+                            <p class="mb-0 font-helvetica fs-18 line-25 fw-normal text-white">
+                                Buildspace
+                            </p>
+                            <span>
+                                <svg width="31" height="30" viewBox="0 0 31 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.0801 27.5C22.9836 27.5 28.5801 21.9036 28.5801 15C28.5801 8.09644 22.9836 2.5 16.0801 2.5C9.17652 2.5 3.58008 8.09644 3.58008 15C3.58008 21.9036 9.17652 27.5 16.0801 27.5Z"
+                                        stroke="#848895" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M16.0801 20L21.0801 15L16.0801 10" stroke="#848895" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M11.0801 15H21.0801" stroke="#848895" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div class="box_bg_img d-flex flex-column justify-content-end mt-4" data-aos="fade-right"
+                        data-aos-once="true" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                        <div class="pb-3">
+                            <span class="mb-0 font-helvetica  fs-11 fw-normal text-white chapters_17">
+                                13 Chapters
+                            </span>
+                        </div>
+                        <div class=" d-flex justify-content-between">
+                            <p class="mb-0 font-helvetica fs-18  line-25 fw-normal text-white">
+                                Solana Bytes
+                            </p>
+                            <span>
+                                <svg width="31" height="30" viewBox="0 0 31 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.0801 27.5C22.9836 27.5 28.5801 21.9036 28.5801 15C28.5801 8.09644 22.9836 2.5 16.0801 2.5C9.17652 2.5 3.58008 8.09644 3.58008 15C3.58008 21.9036 9.17652 27.5 16.0801 27.5Z"
+                                        stroke="#848895" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M16.0801 20L21.0801 15L16.0801 10" stroke="#848895" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M11.0801 15H21.0801" stroke="#848895" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-sm-6">
+                    <div class="box_bg_img d-flex flex-column justify-content-end mt-sm-0 mt-4" data-aos="fade-up"
+                        data-aos-once="true" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                        <div class="pb-3">
+                            <span class="mb-0 font-helvetica fs-11 fw-normal text-white chapters_17">
+                                12 Chapters
+                            </span>
+                        </div>
+                        <div class=" d-flex justify-content-between">
+                            <p class="mb-0 font-helvetica  line-25 fs-18 fw-normal text-white">
+                                Solana Bootcamp
+                            </p>
+                            <span>
+                                <svg width="31" height="30" viewBox="0 0 31 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.0801 27.5C22.9836 27.5 28.5801 21.9036 28.5801 15C28.5801 8.09644 22.9836 2.5 16.0801 2.5C9.17652 2.5 3.58008 8.09644 3.58008 15C3.58008 21.9036 9.17652 27.5 16.0801 27.5Z"
+                                        stroke="#848895" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M16.0801 20L21.0801 15L16.0801 10" stroke="#848895" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M11.0801 15H21.0801" stroke="#848895" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div class="box_bg_img d-flex flex-column justify-content-end mt-4" data-aos="fade-up"
+                        data-aos-once="true" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                        <div class="pb-3">
+                            <span class="mb-0 font-helvetica fs-11 fw-normal text-white chapters_17">
+                                167 Chapters
+                            </span>
+                        </div>
+                        <div class=" d-flex justify-content-between">
+                            <p class="mb-0 font-helvetica  line-25 fs-18 fw-normal text-white">
+                                Solana Bytes
+                            </p>
+                            <span>
+                                <svg width="31" height="30" viewBox="0 0 31 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.0801 27.5C22.9836 27.5 28.5801 21.9036 28.5801 15C28.5801 8.09644 22.9836 2.5 16.0801 2.5C9.17652 2.5 3.58008 8.09644 3.58008 15C3.58008 21.9036 9.17652 27.5 16.0801 27.5Z"
+                                        stroke="#848895" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M16.0801 20L21.0801 15L16.0801 10" stroke="#848895" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M11.0801 15H21.0801" stroke="#848895" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-sm-6 mt-lg-0 mt-4 d-flex flex-column justify-content-center">
+                    <div class="box_bg_img d-flex flex-column justify-content-end" data-aos="fade-left"
+                        data-aos-once="true" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                        <div class="pb-3">
+                            <span class="mb-0 font-helvetica fs-11 fw-normal text-white chapters_17">
+                                1 Chapters
+                            </span>
+                        </div>
+                        <div class=" d-flex justify-content-between">
+                            <p class="mb-0 font-helvetica  line-25 fs-18 fw-normal text-white">
+                                Scaffold Series
+                            </p>
+                            <span>
+                                <svg width="31" height="30" viewBox="0 0 31 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.0801 27.5C22.9836 27.5 28.5801 21.9036 28.5801 15C28.5801 8.09644 22.9836 2.5 16.0801 2.5C9.17652 2.5 3.58008 8.09644 3.58008 15C3.58008 21.9036 9.17652 27.5 16.0801 27.5Z"
+                                        stroke="#848895" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M16.0801 20L21.0801 15L16.0801 10" stroke="#848895" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M11.0801 15H21.0801" stroke="#848895" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div class="box_bg_img d-flex flex-column justify-content-end mt-4" data-aos="fade-left"
+                        data-aos-once="true" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                        <div class="pb-3">
+                            <span class="mb-0 font-helvetica  fs-11 fw-normal text-white chapters_17">
+                                8 Chapters
+                            </span>
+                        </div>
+                        <div class=" d-flex justify-content-between">
+                            <p class="mb-0 font-helvetica fs-18 line-25 fw-normal text-white">
+                                Solana Bootcamp
+                            </p>
+                            <span>
+                                <svg width="31" height="30" viewBox="0 0 31 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.0801 27.5C22.9836 27.5 28.5801 21.9036 28.5801 15C28.5801 8.09644 22.9836 2.5 16.0801 2.5C9.17652 2.5 3.58008 8.09644 3.58008 15C3.58008 21.9036 9.17652 27.5 16.0801 27.5Z"
+                                        stroke="#848895" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M16.0801 20L21.0801 15L16.0801 10" stroke="#848895" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M11.0801 15H21.0801" stroke="#848895" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="responsive overflow-hidden mt-5 d-lg-none">
+                <div class="box_bg_img d-flex flex-column justify-content-end mt-sm-0" data-aos="fade-up"
+                    data-aos-once="true" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                    <div class="pb-3">
+                        <span class="mb-0 font-helvetica fs-11 fw-normal text-white chapters_17">
+                            12 Chapters
+                        </span>
+                    </div>
+                    <div class=" d-flex justify-content-between">
+                        <p class="mb-0 font-helvetica line-25 fs-18 fw-normal text-white">
+                            Solana Bootcamp
+                        </p>
+                        <span>
+                            <svg width="31" height="30" viewBox="0 0 31 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.0801 27.5C22.9836 27.5 28.5801 21.9036 28.5801 15C28.5801 8.09644 22.9836 2.5 16.0801 2.5C9.17652 2.5 3.58008 8.09644 3.58008 15C3.58008 21.9036 9.17652 27.5 16.0801 27.5Z"
+                                    stroke="#848895" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16.0801 20L21.0801 15L16.0801 10" stroke="#848895" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M11.0801 15H21.0801" stroke="#848895" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                        </span>
+                    </div>
+                </div>
+                <div class="box_bg_img d-flex flex-column justify-content-end" data-aos="fade-up" data-aos-once="true"
+                    data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                    <div class="pb-3">
+                        <span class="mb-0 font-helvetica fs-11 fw-normal text-white chapters_17">
+                            167 Chapters
+                        </span>
+                    </div>
+                    <div class=" d-flex justify-content-between">
+                        <p class="mb-0 font-helvetica line-25 fs-18 fw-normal text-white">
+                            Solana Bytes
+                        </p>
+                        <span>
+                            <svg width="31" height="30" viewBox="0 0 31 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.0801 27.5C22.9836 27.5 28.5801 21.9036 28.5801 15C28.5801 8.09644 22.9836 2.5 16.0801 2.5C9.17652 2.5 3.58008 8.09644 3.58008 15C3.58008 21.9036 9.17652 27.5 16.0801 27.5Z"
+                                    stroke="#848895" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16.0801 20L21.0801 15L16.0801 10" stroke="#848895" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M11.0801 15H21.0801" stroke="#848895" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                        </span>
+                    </div>
+                </div>
+                <div class="box_bg_img d-flex flex-column justify-content-end" data-aos="fade-up" data-aos-once="true"
+                    data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                    <div class="pb-3">
+                        <span class="mb-0 font-helvetica fs-11 fw-normal text-white chapters_17">
+                            1 Chapters
+                        </span>
+                    </div>
+                    <div class=" d-flex justify-content-between">
+                        <p class="mb-0 font-helvetica line-25 fs-18 fw-normal text-white">
+                            Scaffold Series
+                        </p>
+                        <span>
+                            <svg width="31" height="30" viewBox="0 0 31 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.0801 27.5C22.9836 27.5 28.5801 21.9036 28.5801 15C28.5801 8.09644 22.9836 2.5 16.0801 2.5C9.17652 2.5 3.58008 8.09644 3.58008 15C3.58008 21.9036 9.17652 27.5 16.0801 27.5Z"
+                                    stroke="#848895" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16.0801 20L21.0801 15L16.0801 10" stroke="#848895" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M11.0801 15H21.0801" stroke="#848895" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                        </span>
+                    </div>
+                </div>
+                <div class="box_bg_img d-flex flex-column justify-content-end" data-aos="fade-up" data-aos-once="true"
+                    data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                    <div class="pb-3">
+                        <span class="mb-0 font-helvetica fs-11 fw-normal text-white chapters_17">
+                            8 Chapters
+                        </span>
+                    </div>
+                    <div class=" d-flex justify-content-between">
+                        <p class="mb-0 font-helvetica line-25 fs-18 fw-normal text-white">
+                            Solana Bootcamp
+                        </p>
+                        <span>
+                            <svg width="31" height="30" viewBox="0 0 31 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.0801 27.5C22.9836 27.5 28.5801 21.9036 28.5801 15C28.5801 8.09644 22.9836 2.5 16.0801 2.5C9.17652 2.5 3.58008 8.09644 3.58008 15C3.58008 21.9036 9.17652 27.5 16.0801 27.5Z"
+                                    stroke="#848895" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16.0801 20L21.0801 15L16.0801 10" stroke="#848895" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M11.0801 15H21.0801" stroke="#848895" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                        </span>
+                    </div>
+                </div>
+                <div class="box_bg_img d-flex flex-column justify-content-end" data-aos="fade-up" data-aos-once="true"
+                    data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                    <div class="pb-3">
+                        <span class="mb-0 font-helvetica fs-11 fw-normal text-white chapters_17">
+                            1 Chapters
+                        </span>
+                    </div>
+                    <div class=" d-flex justify-content-between">
+                        <p class="mb-0 font-helvetica line-25 fs-18 fw-normal text-white">
+                            Scaffold Series
+                        </p>
+                        <span>
+                            <svg width="31" height="30" viewBox="0 0 31 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.0801 27.5C22.9836 27.5 28.5801 21.9036 28.5801 15C28.5801 8.09644 22.9836 2.5 16.0801 2.5C9.17652 2.5 3.58008 8.09644 3.58008 15C3.58008 21.9036 9.17652 27.5 16.0801 27.5Z"
+                                    stroke="#848895" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16.0801 20L21.0801 15L16.0801 10" stroke="#848895" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M11.0801 15H21.0801" stroke="#848895" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                        </span>
+                    </div>
+                </div>
+                <div class="box_bg_img d-flex flex-column justify-content-end" data-aos="fade-up" data-aos-once="true"
+                    data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                    <div class="pb-3">
+                        <span class="mb-0 font-helvetica fs-11 fw-normal text-white chapters_17">
+                            8 Chapters
+                        </span>
+                    </div>
+                    <div class=" d-flex justify-content-between">
+                        <p class="mb-0 font-helvetica line-25 fs-18 fw-normal text-white">
+                            Solana Bootcamp
+                        </p>
+                        <span>
+                            <svg width="31" height="30" viewBox="0 0 31 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.0801 27.5C22.9836 27.5 28.5801 21.9036 28.5801 15C28.5801 8.09644 22.9836 2.5 16.0801 2.5C9.17652 2.5 3.58008 8.09644 3.58008 15C3.58008 21.9036 9.17652 27.5 16.0801 27.5Z"
+                                    stroke="#848895" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16.0801 20L21.0801 15L16.0801 10" stroke="#848895" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M11.0801 15H21.0801" stroke="#848895" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- rohit==code -->
+    <section class="bg-black -mt-1  overflow-hidden">
+        <div class="container max-w-1100">
+            <div data-aos="fade-right" data-aos-once="true" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                <h2 class="font-helvetica fw-normal line-42 fs-36 text-white mb-0 text-sm-start text-center">Dig deeper.
+                </h2>
+                <h6 class="font-helvetica fw-normal line-27 fs-20 mb-0 gray-100 pt-1 text-sm-start text-center">Learn from
+                    resources across the
+                    greater Solana ecosystem.</h6>
+            </div>
+            <div class="row pt-32 pb-lg-100 pb-60">
+                <div class="col-lg-4  col-sm-6 col-12">
+                    <div class="min-box position-relative z-1 d-flex  flex-column justify-content-between overflow-hidden"
+                        data-aos="fade-right" data-aos-once="true" data-aos-duration="2000"
+                        data-aos-easing="ease-out-cubic">
+                        <div class="d-flex flex-column ">
+                            <h6 class="color-purple font-helvetica fw-normal line-15 fs-12 text-uppercase mb-0">tool /
+                                library</h6>
+                            <h5 class="pt-2 mb-0 font-helvetica fw-normal line-21 fs-18 text-white">Core Documentation
+                            </h5>
+                            <h4 class="pt-14 font-helvetica fw-normal line-25 fs-16 text-white mb-0">The official Solana
+                                documentation on developing, validators, SPL tokens, wallets and more.</h4>
+                        </div>
+                        <div class="d-flex gap-2 z-1 pt-4">
+                            <a href="" class="text-uppercase text-white font-helvetica fw-normal line-25 fs-11 z-1">Learn
+                                more</a>
+                            <img src="./assets/images/svg/uparrow.svg" alt="arrow" class="z-1">
+                        </div>
+                        <div class="Ellipse1 position-absolute opacity-0 z-0">
+                            <img src="./assets/images/svg/Ellipse1.svg" alt="Ellipse" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-sm-6 col-12 pt-4 pt-sm-0">
+                    <div class="min-box position-relative z-1 d-flex  flex-column justify-content-between overflow-hidden"
+                        data-aos="fade-up" data-aos-once="true" data-aos-duration="2000"
+                        data-aos-easing="ease-out-cubic">
+                        <div class="d-flex flex-column">
+                            <h6 class="color-purple font-helvetica fw-normal line-15 fs-12 text-uppercase mb-0">tool /
+                                library</h6>
+                            <h5 class="pt-2 mb-0 font-helvetica fw-normal line-21 fs-18 text-white">Solana Cookbook</h5>
+                            <h4 class="pt-14 font-helvetica fw-normal line-25 fs-16 text-white mb-0">The Solana Cookbook
+                                is a developer resource that provides the essential concepts and references for building
+                                applications on Solana.</h4>
+                        </div>
+                        <div class=" d-flex gap-2 z-1 pt-4">
+                            <a href="" class="text-uppercase text-white font-helvetica fw-normal line-25 fs-11 z-1">Learn
+                                more</a>
+                            <img src="./assets/images/svg/uparrow.svg" alt="arrow" class="z-1">
+                        </div>
+                        <div class="Ellipse1 position-absolute opacity-0 z-0">
+                            <img src="./assets/images/svg/Ellipse1.svg" alt="Ellipse" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-sm-6 col-12 pt-4 pt-lg-0">
+                    <div class="min-box position-relative z-1 d-flex  flex-column justify-content-between overflow-hidden"
+                        data-aos="fade-left" data-aos-once="true" data-aos-duration="2000"
+                        data-aos-easing="ease-out-cubic">
+                        <div class="d-flex flex-column">
+                            <h6 class="color-purple font-helvetica fw-normal line-15 fs-12 text-uppercase mb-0">tool /
+                                library</h6>
+                            <h5 class="pt-2 mb-0 font-helvetica fw-normal line-21 fs-18 text-white">Solana Stack Exchange
+                            </h5>
+                            <h4 class="pt-14 font-helvetica fw-normal line-25 fs-16 text-white mb-0">Solana Stack Exchange
+                                is a question and answer site for Solana software users and developers.</h4>
+                        </div>
+                        <div class="d-flex gap-2 z-1 pt-4">
+                            <a href="" class="text-uppercase text-white font-helvetica fw-normal line-25 fs-11 z-1">Learn
+                                more</a>
+                            <img src="./assets/images/svg/uparrow.svg" alt="arrow" class="z-1">
+                        </div>
+                        <div class="Ellipse1 position-absolute opacity-0 z-0">
+                            <img src="./assets/images/svg/Ellipse1.svg" alt="Ellipse" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-sm-6 col-12 pt-4">
+                    <div class="min-box position-relative z-1 d-flex  flex-column justify-content-between overflow-hidden"
+                        data-aos="fade-right" data-aos-once="true" data-aos-duration="2000"
+                        data-aos-easing="ease-out-cubic">
+                        <div class="d-flex flex-column">
+                            <h6 class="color-purple font-helvetica fw-normal line-15 fs-12 text-uppercase mb-0">tool /
+                                library</h6>
+                            <h5 class="pt-2 mb-0 font-helvetica fw-normal line-21 fs-18 text-white">Solana Playground</h5>
+                            <h4 class="pt-14 font-helvetica fw-normal line-25 fs-16 text-white mb-0">Easily build, deploy
+                                and test Solana programs and smart contracts from a browser IDE.</h4>
+                        </div>
+                        <div class="d-flex gap-2 z-1 pt-4">
+                            <a href="" class="text-uppercase text-white font-helvetica fw-normal line-25 fs-11 z-1">Learn
+                                more</a>
+                            <img src="./assets/images/svg/uparrow.svg" alt="arrow" class="z-1">
+                        </div>
+                        <div class="Ellipse1 position-absolute opacity-0 z-0">
+                            <img src="./assets/images/svg/Ellipse1.svg" alt="Ellipse" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 pt-4">
+                    <div class="min-box position-relative z-1 d-flex  flex-column justify-content-between overflow-hidden"
+                        data-aos="fade-up" data-aos-once="true" data-aos-duration="2000"
+                        data-aos-easing="ease-out-cubic">
+                        <div class="d-flex flex-column">
+                            <h6 class="color-purple font-helvetica fw-normal line-15 fs-12 text-uppercase mb-0">tool /
+                                library</h6>
+                            <h5 class="pt-2 mb-0 font-helvetica fw-normal line-21 fs-18 text-white">create-solana-dapp
+                            </h5>
+                            <h4 class="pt-14 font-helvetica fw-normal line-25 fs-16 text-white mb-0">Get up and running
+                                fast with Solana dApps, generate a project template in seconds.</h4>
+                        </div>
+                        <div class=" d-flex gap-2 z-1 pt-4">
+                            <a href="" class="text-uppercase text-white font-helvetica fw-normal line-25 fs-11 z-1">Learn
+                                more</a>
+                            <img src="./assets/images/svg/uparrow.svg" alt="arrow" class="z-1">
+                        </div>
+                        <div class="Ellipse1 position-absolute opacity-0 z-0">
+                            <img src="./assets/images/svg/Ellipse1.svg" alt="Ellipse" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-sm-6 col-12 pt-4">
+                    <div class="min-box position-relative z-1 d-flex flex-column justify-content-between overflow-hidden"
+                        data-aos="fade-left" data-aos-once="true" data-aos-duration="2000"
+                        data-aos-easing="ease-out-cubic">
+                        <div class="d-flex flex-column">
+                            <h6 class="color-purple font-helvetica fw-normal line-15 fs-12 text-uppercase mb-0">tool /
+                                library</h6>
+                            <h5 class="pt-2 mb-0 font-helvetica fw-normal line-21 fs-18 text-white">Anchor Docs</h5>
+                            <h4 class="pt-14 font-helvetica fw-normal line-25 fs-16 text-white mb-0">Anchor is a framework
+                                for Solana's Sealevel runtime providing several convenient developer tools for writing
+                                smart contracts.</h4>
+                        </div>
+                        <div class=" d-flex gap-2 z-1 pt-4">
+                            <a href="" class="text-uppercase text-white font-helvetica fw-normal line-25 fs-11 z-1">Learn
+                                more</a>
+                            <img src="./assets/images/svg/uparrow.svg" alt="arrow" class="z-1">
+                        </div>
+                        <div class="Ellipse1 position-absolute opacity-0 z-0">
+                            <img src="./assets/images/svg/Ellipse1.svg" alt="Ellipse" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-sm-6 col-12 pt-4">
+                    <div class="min-box position-relative z-1 d-flex  flex-column justify-content-between overflow-hidden"
+                        data-aos="fade-right" data-aos-once="true" data-aos-duration="2000"
+                        data-aos-easing="ease-out-cubic">
+                        <div class="d-flex flex-column">
+                            <h6 class="color-purple font-helvetica fw-normal line-15 fs-12 text-uppercase mb-0">tool /
+                                library</h6>
+                            <h5 class="pt-2 mb-0 font-helvetica fw-normal line-21 fs-18 text-white">Solana Program Library
+                            </h5>
+                            <h4 class="pt-14 font-helvetica fw-normal line-25 fs-16 text-white mb-0">The Solana Program
+                                Library (SPL) is a collection of on-chain programs targeting the Sealevel parallel
+                                runtime.</h4>
+                        </div>
+                        <div class="d-flex gap-2 z-1 pt-4">
+                            <a href="" class="text-uppercase text-white font-helvetica fw-normal line-25 fs-11 z-1">Learn
+                                more</a>
+                            <img src="./assets/images/svg/uparrow.svg" alt="arrow" class="z-1">
+                        </div>
+                        <div class="Ellipse1 position-absolute opacity-0 z-0">
+                            <img src="./assets/images/svg/Ellipse1.svg" alt="Ellipse" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-sm-6 col-12 pt-4">
+                    <div class="min-box position-relative z-1 d-flex  flex-column justify-content-between overflow-hidden"
+                        data-aos="fade-up" data-aos-once="true" data-aos-duration="2000"
+                        data-aos-easing="ease-out-cubic">
+                        <div class="d-flex flex-column">
+                            <h6 class="color-purple font-helvetica fw-normal line-15 fs-12 text-uppercase mb-0">tool /
+                                library</h6>
+                            <h5 class="pt-2 mb-0 font-helvetica fw-normal line-21 fs-18 text-white">Program Examples</h5>
+                            <h4 class="pt-14 font-helvetica fw-normal line-25 fs-16 text-white mb-0">A list of curated
+                                examples for a wide range of use cases implemented using on-chain programs.</h4>
+                        </div>
+                        <div class="d-flex gap-2 z-1 pt-4">
+                            <a href="" class="text-uppercase text-white font-helvetica fw-normal line-25 fs-11 z-1">Learn
+                                more</a>
+                            <img src="./assets/images/svg/uparrow.svg" alt="arrow" class="z-1">
+                        </div>
+                        <div class="Ellipse1 position-absolute opacity-0 z-0">
+                            <img src="./assets/images/svg/Ellipse1.svg" alt="Ellipse" class="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-black -mt-1 position-relative overflow-hidden">
+        <div class="gradient-box w-100 position-absolute d-block z-0"></div>
+        <div class="container max-w-1100">
+            <div class="pt-76 position-relative z-1" data-aos="fade-right" data-aos-once="true" data-aos-duration="2000"
+                data-aos-easing="ease-out-cubic">
+                <h2 class="font-helvetica fw-normal line-42 fs-36 text-white mb-0 text-sm-start text-center">Go to the
+                    source.</h2>
+                <h6 class="font-helvetica fw-normal line-27 fs-20 pt-1 gray-100 mb-0 text-sm-start text-center">Read the
+                    documentation for Solana and
+                    popular tools.</h6>
+            </div>
+            <div class="row pt-5">
+                <div class="col-md-6 col-12 z-1 pe-md-4" data-aos="zoom-in-right" data-aos-once="true"
+                    data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                    <div class="d-flex justify-content-between bottom-border pb-31 max-w-md-522">
+                        <h3 class="font-helvetica fw-normal line-32 fs-32 text-white mb-0">Solana Docs</h3>
+                        <button
+                            class="view-btn  font-Roboto fw-normal line-21 fs-15 bg-transparent text-white d-flex gap-10 transition-300 text-nowrap align-items-end">View
+                            all <img src="./assets/images/svg/uparrow.svg" alt="arrow" class="transition-300"></button>
+                    </div>
+                    <h5 class="mb-0 font-helvetica fw-normal line-27 fs-20  pt-30 text-white max-w-md-393">Learn how
+                        Solana works and
+                        get a high-level understanding of Solana's architecture.</h5>
+                </div>
+                <div class="col-md-6 col-12 pt-5 ps-md-4 pt-md-0 z-1" data-aos="zoom-in-left" data-aos-once="true"
+                    data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                    <div class="d-flex justify-content-between bottom-border pb-31 max-w-md-522">
+                        <h3 class="font-helvetica fw-normal line-32 fs-32 text-white mb-0">Metaplex Docs</h3>
+                        <button
+                            class="view-btn  font-Roboto fw-normal line-21 fs-15 bg-transparent text-white d-flex gap-10 transition-300 text-nowrap align-items-end">View
+                            all <img src="./assets/images/svg/uparrow.svg" alt="arrow" class="transition-300"></button>
+                    </div>
+                    <h5 class="mb-0 font-helvetica fw-normal line-27 fs-20  pt-30 text-white max-w-md-503">Learn what you
+                        build with
+                        Metaplex, make the process of creating and launching NFTs easier.</h5>
+                </div>
+            </div>
+            <div class="row pt-144 flex-wrap-reverse ">
+                <div class="col-md-6 col-12 pt-4 pt-md-0 z-1" data-aos="zoom-out-right" data-aos-once="true"
+                    data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                    <h3 class="mb-0 font-helvetica line-42 fs-38 text-white  fw-medium">Solana Changelog</h3>
+                    <h5 class="mb-0 font-helvetica line-27 fs-20  pt-29 text-white max-w-md-503">Some more Solana changes
+                        from Jacob &
+                        joe. Subscribe to the newsletter: https://solana.us17.list-manage.com/s... Proposal - Priced
+                        Comput Units:..</h5>
+                    <button
+                        class="latest-btn mt-57 font-Roboto fw-normal line-21 fs-15 text-white d-flex gap-10 bg-transparent transition-300 align-items-center">LATEST
+                        EPISODE <img src="./assets/images/svg/uparrow.svg" alt="arrow" class="transition-300"></button>
+                </div>
+                <div class="col-md-6 col-12 z-1" data-aos="zoom-out-left" data-aos-once="true" data-aos-duration="2000"
+                    data-aos-easing="ease-out-cubic">
+                    <img src="./assets/images/IMAGE.png" alt="IMAGE" class="w-100">
+                </div>
+            </div>
+            <div class="row pt-sm-133 pb-80 pt-60 ">
+                <div class="col-md-6 col-12 z-1" data-aos="flip-left" data-aos-once="true" data-aos-duration="2000"
+                    data-aos-easing="ease-out-cubic">
+                    <div class="last-section-box d-flex flex-column justify-content-between">
+                        <div class="d-flex flex-column">
+                            <h4 class="mb-0 font-helvetica fw-normal line-37 fs-36 text-white">Solana Developer Update
+                            </h4>
+                            <h6 class="font-helvetica mb-0 line-27 fs-17 gray-100 pt-29">Sign up to the newsletter and
+                                learn about new resources, new commits, new proposals, and more.</h6>
+                        </div>
+                        <div class="input-box  d-flex gap-3 mt-4 flex-sm-nowrap flex-wrap">
+                            <input type="email" placeholder="Email"
+                                class="font-Roboto line-21 fs-15 fw-semibold bg-black border-0 outline-none text-white w-100 input-text">
+                            <button
+                                class="text-uppercase  font-Roboto fw-normal fs-15 line-21 text-black sign-btn w-100 text-nowrap transition-300">Sign
+                                up</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 pt-4 pt-md-0 z-1" data-aos="flip-right" data-aos-once="true"
+                    data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                    <div class="last-section-box d-flex flex-column justify-content-between">
+                        <div class="d-flex flex-column">
+                            <h4 class="mb-0 font-helvetica fw-normal line-37 fs-36 text-white">Even more resources</h4>
+                            <h6 class="font-helvetica mb-0 line-27 fs-18 gray-100 pt-29 max-w-md-400">More videos, more
+                                episodes.
+                                Discussions between industry leaders in both blockchain and technology, our team, and
+                                community developers.</h6>
+                        </div>
+                        <div class="d-flex gap-22 pt-4 flex-lg-nowrap flex-wrap">
+                            <button
+                                class="media-btn font-Roboto fw-normal fs-15 line-21 text-white d-flex gap-2 bg-transparent w-100 align-items-center justify-content-center transition-300 text-uppercase">YouTube                                
+                                <img src="./assets/images/svg/youtub.svg" alt="youtub">
+                            </button>
+                            <button
+                                class="media-btn font-Roboto fw-normal fs-15 line-21 text-white d-flex gap-2 bg-transparent w-100 align-items-center justify-content-center transition-300 text-uppercase">Podcast
+                                <img src="./assets/images/svg/Podcast.svg" alt="Podcast"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="black-denim -mt-1 ">
+        <div class="container max-w-1100">
+            <div class="row pt-60 pb-60 pt-sm-80  pb-sm-81 ">
+                <div class="col-lg-7">
+                    <img src="./assets/images/svg/footerlogo.svg" alt="logo">
+                    <h6 class="fw-normal line-27 fs-16 text-white pt-20 font-Roboto mb-0">Managed by Solana Foundation
+                    </h6>
+                    <div class="pt-24 pb-29 d-flex gap-10">
+                        <a href="https://www.youtube.com/" target="_blank"
+                            class="social-media d-flex justify-content-center align-items-center transition-300"><img
+                                src="./assets/images/svg/youtube.svg" alt="youtube"></a>
+                        <a href="https://twitter.com/?lang=en" target="_blank"
+                            class="social-media d-flex justify-content-center align-items-center transition-300"><img
+                                src="./assets/images/svg/twitter.svg" alt="twitter"></a>
+                        <a href="https://discord.com/channels/984345847628181504/999268522427437086" target="_blank"
+                            class="social-media d-flex justify-content-center align-items-center transition-300"><img
+                                src="./assets/images/svg/discord.svg" alt="discord"></a>
+                        <a href="https://www.reddit.com/" target="_blank"
+                            class="social-media d-flex justify-content-center align-items-center transition-300 rounded-100"><img
+                                src="./assets/images/svg/reddit.svg" alt="reddit"></a>
+                        <a href="https://github.com/" target="_blank"
+                            class="social-media d-flex justify-content-center align-items-center transition-300"><img
+                                src="./assets/images/svg/github.svg" alt="github"></a>
+                        <a href="https://telegram.org/" target="_blank"
+                            class="social-media d-flex justify-content-center align-items-center transition-300"><img
+                                src="./assets/images/svg/telegram.svg" alt="telegram"></a>
+                    </div>
+                    <h6 class="mb-0 gray-200 fw-normal line-27 fs-16 font-Roboto font-helvetica">© <span id="year2">
+                        </span> Solana Foundation. All rights reserved.</h6>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6 pt-4 pt-lg-0">
+                    <ul class="d-flex flex-column gap-11 p-0 m-0">
+                        <li class="fw-normal lh-18 fs-16 text-white font-helvetica text-uppercase">Solana</li>
+                        <li><a href="#"
+                                class="fw-normal line-27 fs-15 gray-200 font-helvetica position-relative underline ">Grants</a>
+                        </li>
+                        <li><a href="#"
+                                class="fw-normal line-27 fs-15 gray-200 font-helvetica position-relative underline">Break
+                                Solana</a></li>
+                        <li><a href="#"
+                                class="fw-normal line-27 fs-15 gray-200 font-helvetica position-relative underline">Media
+                                Kit</a></li>
+                        <li><a href="#"
+                                class="fw-normal line-27 fs-15 gray-200 font-helvetica position-relative underline">Careers</a>
+                        </li>
+                        <li><a href="#"
+                                class="fw-normal line-27 fs-15 gray-200 font-helvetica position-relative underline">Disclaimer</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6 pt-4 pt-lg-0">
+                    <ul class="d-flex flex-column gap-11 p-0 m-0">
+                        <li class="fw-normal lh-18 fs-16 text-white font-helvetica text-uppercase">Get Connected</li>
+                        <li><a href="#"
+                                class="fw-normal line-27 fs-15 gray-200 font-helvetica position-relative underline">Ecosystem</a>
+                        </li>
+                        <li><a href="#"
+                                class="fw-normal line-27 fs-15 gray-200 font-helvetica position-relative underline">Blog</a>
+                        </li>
+                        <li><a href="#"
+                                class="fw-normal line-27 fs-15 gray-200 font-helvetica position-relative underline">Newsletter</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-1 col-sm-4 col-12 pt-4 pt-lg-0   d-flex justify-content-lg-end">
+                    <div class="d-flex gap-1 cursor-pointer align-items-start">
+                        <img src="./assets/images/svg/world-icon.svg" alt="world-icon">
+                        <h6 class="mb-0 fw-normal lh-24 font-helvetica gray-200">EN</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- rohit==code -->
+    <div class="d-sm-flex d-none">
+        <button class="pulse " onclick="topFunction()" id="myBtn" title="Go to top">
+            <!-- <img src="./assets/image/topicon.svg" alt="#"> -->
+            <img src="./assets/images/topicon.svg" alt="#">
+        </button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+        integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+
+    </script>
+
+    <script>var loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                loader.style.display = "none";
+                document.body.classList.remove('overflow-hidden')
+            }, 2000);
+        });
+    </script>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 300) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        function openNav() {
+            document.getElementById("navbar").classList.toggle("start-0");
+            document.body.classList.toggle("overflow_hidden");
+            document.querySelector(".menu").classList.toggle("cross")
+        }
+        AOS.init({
+            once: true,
+        });  
+    </script>
+
+</body>
+
+</html>
