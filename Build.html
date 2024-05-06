@@ -43,11 +43,11 @@
         transition: all linear 400ms;
     }
 
-
-
+    .max-w-1085{
+        max-width: 1085px !important;
+    }
     .max-w-1240{
-        max-width: 1240px !
-        ;
+        max-width: 1240px !important;
     } 
     
 
@@ -162,14 +162,35 @@
         padding-left: 70px;
     }
 
-    .box_bg_img {
-        /* background-image: url(../image/box_img.png); */
+    .box_bg_img {        
+        /* background-image: url(./assets/images/box_img.png); */
+        background-size: 100% 100%;        
+        padding: 0px 18px 40px 31px;                
+        min-height: 320px;
+    }
+    .box-bg-img-1{
         background-image: url(./assets/images/box_img.png);
-        background-size: 100% 100%;
-        padding-bottom: 40px;
-        padding-left: 31px;
-        padding-right: 18px;
-        min-height: 346px;
+
+    }
+    .box-bg-img-2{
+        background-image: url(./assets/images/box_img3.png);
+
+    }
+    .box-bg-img-3{
+        background-image: url(./assets/images/box_img5.png);
+
+    }
+    .box-bg-img-4{
+        background-image: url(./assets/images/box_img2.png);
+
+    }
+    .box-bg-img-5{
+        background-image: url(./assets/images/box_img4.png);
+
+    }
+    .box-bg-img-6{
+        background-image: url(./assets/images/box_img6.png);
+
     }
 
     .responsive .slick-slide {
@@ -344,14 +365,7 @@
             padding-left: 10px;
         }
 
-        .box_bg_img {
-            background-image: url(../images/box_img.png);
-            background-size: 100% 100%;
-            padding-bottom: 20px;
-            padding-left: 15px;
-            padding-right: 15px;
-            min-height: 300px;
-        }
+      
     }
 
 
@@ -878,7 +892,7 @@
                     Breakpoint 2023 - New City. New Vibes - Get Early Access ->
                 </p>
             </div>
-            <div class="container max-w-1240">
+            <div class="container max-w-1140">
                 <div class="d-flex align-items-center justify-content-between py-3">
                     <div class="d-flex align-items-center gap-1">
                         <div class="pe-1">
@@ -972,7 +986,7 @@
                 </div>
             </div>
         </nav>
-        <div class="container max-w-1240 py-5">
+        <div class="container max-w-1140 py-5">
             <div class="row pt-5">
                 <div
                     class="col-12 col-lg-6 mt-5 pt-5 d-flex flex-column justify-content-lg-start justify-content-center align-items-center align-items-lg-start">
@@ -999,39 +1013,41 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="position-relative">
-                        <img class="w-100" src="./assets/images/img_1.png" alt="#">
-                        <div class="ellipe_1 w-100"></div>
+                    <div class="main-img">
+                        <div class="position-relative">
+                            <img class="w-100" src="./assets/images/img_1.png" alt="#">
+                            <div class="ellipe_1 w-100"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
     <section class="overflow-hidden">
-        <div class="container max-w-1240 py-5">
+        <div class="container max-w-1085 py-5">
             <h3 class="mb-0 font-helvetica fs-38 fw-normal line-42 text-white" data-aos="fade-right" data-aos-once="true"
-                data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                data-aos-duration="1500" data-aos-easing="ease-out-cubic">
                 Get started.
             </h3>
             <p class="mb-0 font-helvetica fs-20 fw-normal line-27 text_gray pt-1" data-aos="fade-right"
-                data-aos-once="true" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                data-aos-once="true" data-aos-duration="1500" data-aos-easing="ease-out-cubic">
                 Use these Solana Foundation and community courses to begin your journey into Solana development.
             </p>
-            <div class="bg_image_section_2 mt-5" data-aos="fade-left" data-aos-once="true" data-aos-duration="2000"
+            <div class="bg_image_section_2 mt-5" data-aos="fade-left" data-aos-once="true" data-aos-duration="1500"
                 data-aos-easing="ease-out-cubic">
                 <span class="mb-0 font-helvetica fs-11 fw-normal  text-white chapters_17" data-aos="fade-right"
-                    data-aos-once="true" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                    data-aos-once="true" data-aos-duration="1500" data-aos-easing="ease-out-cubic">
                     17 Chapters
                 </span>
                 <h4 class="mb-0 font-helvetica fs-38 fw-normal line-42 text-white pt-2 pb-4" data-aos="fade-right"
-                    data-aos-once="true" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                    data-aos-once="true" data-aos-duration="1500" data-aos-easing="ease-out-cubic">
                     Solana Development Course
                 </h4>
                 <p class="mb-0 font-helvetica fs-18 fw-normal line-27 text-white mw_395 pb-4" data-aos="fade-right"
-                    data-aos-once="true" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                    data-aos-once="true" data-aos-duration="1500" data-aos-easing="ease-out-cubic">
                     Quickstart your Solana development starting from nothing to complex programs.
                 </p>
-                <span>
+                <span class="cursor-pointer">
                     <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M15.0801 27.5C21.9836 27.5 27.5801 21.9036 27.5801 15C27.5801 8.09644 21.9836 2.5 15.0801 2.5C8.17652 2.5 2.58008 8.09644 2.58008 15C2.58008 21.9036 8.17652 27.5 15.0801 27.5Z"
@@ -1043,118 +1059,122 @@
 
                 </span>
             </div>
-            <div class="row pt-4 d-lg-flex d-none">
-                <div class="col-12 col-lg-4 col-sm-6">
-                    <div class="box_bg_img d-flex flex-column justify-content-end" data-aos="fade-right"
-                        data-aos-once="true" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
-                        <div class="pb-3">
-                            <span class="mb-0 font-helvetica fs-11 fw-normal text-white chapters_17">
-                                14 Chapters
-                            </span>
-                        </div>
-                        <div class=" d-flex justify-content-between">
-                            <p class="mb-0 font-helvetica fs-18 line-25 fw-normal text-white">
-                                Buildspace
-                            </p>
-                            <span>
-                                <svg width="31" height="30" viewBox="0 0 31 30" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M16.0801 27.5C22.9836 27.5 28.5801 21.9036 28.5801 15C28.5801 8.09644 22.9836 2.5 16.0801 2.5C9.17652 2.5 3.58008 8.09644 3.58008 15C3.58008 21.9036 9.17652 27.5 16.0801 27.5Z"
-                                        stroke="#848895" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M16.0801 20L21.0801 15L16.0801 10" stroke="#848895" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M11.0801 15H21.0801" stroke="#848895" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-
-                            </span>
-                        </div>
+            <div class="row pt-4 ">  
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="box_bg_img box-bg-img-1 d-flex flex-column justify-content-end" data-aos="fade-right"
+                    data-aos-once="true" data-aos-duration="1500" data-aos-easing="ease-out-cubic">
+                    <div class="pb-3">
+                        <span class="mb-0 font-helvetica fs-11 fw-normal text-white chapters_17">
+                            14 Chapters
+                        </span>
                     </div>
-                    <div class="box_bg_img d-flex flex-column justify-content-end mt-4" data-aos="fade-right"
-                        data-aos-once="true" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
-                        <div class="pb-3">
-                            <span class="mb-0 font-helvetica  fs-11 fw-normal text-white chapters_17">
-                                13 Chapters
-                            </span>
-                        </div>
-                        <div class=" d-flex justify-content-between">
-                            <p class="mb-0 font-helvetica fs-18  line-25 fw-normal text-white">
-                                Solana Bytes
-                            </p>
-                            <span>
-                                <svg width="31" height="30" viewBox="0 0 31 30" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M16.0801 27.5C22.9836 27.5 28.5801 21.9036 28.5801 15C28.5801 8.09644 22.9836 2.5 16.0801 2.5C9.17652 2.5 3.58008 8.09644 3.58008 15C3.58008 21.9036 9.17652 27.5 16.0801 27.5Z"
-                                        stroke="#848895" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M16.0801 20L21.0801 15L16.0801 10" stroke="#848895" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M11.0801 15H21.0801" stroke="#848895" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
+                    <div class=" d-flex justify-content-between">
+                        <p class="mb-0 font-helvetica fs-18 line-25 fw-normal text-white">
+                            Buildspace
+                        </p>
+                        <span class="cursor-pointer">
+                            <svg width="31" height="30" viewBox="0 0 31 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.0801 27.5C22.9836 27.5 28.5801 21.9036 28.5801 15C28.5801 8.09644 22.9836 2.5 16.0801 2.5C9.17652 2.5 3.58008 8.09644 3.58008 15C3.58008 21.9036 9.17652 27.5 16.0801 27.5Z"
+                                    stroke="#848895" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16.0801 20L21.0801 15L16.0801 10" stroke="#848895" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M11.0801 15H21.0801" stroke="#848895" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
 
-                            </span>
-                        </div>
+                        </span>
+                    </div>
+                    </div> 
+                </div> 
+                <div class="col-lg-4 col-sm-6 col-12 pt-4 pt-sm-0">
+                    <div class="box_bg_img box-bg-img-2 d-flex flex-column justify-content-end" data-aos="fade-right"
+                    data-aos-once="true" data-aos-duration="1500" data-aos-easing="ease-out-cubic">
+                    <div class="pb-3">
+                        <span class="mb-0 font-helvetica  fs-11 fw-normal text-white chapters_17">
+                            13 Chapters
+                        </span>
+                    </div>
+                    <div class=" d-flex justify-content-between">
+                        <p class="mb-0 font-helvetica fs-18  line-25 fw-normal text-white">
+                            Solana Bytes
+                        </p>
+                        <span class="cursor-pointer">
+                            <svg width="31" height="30" viewBox="0 0 31 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.0801 27.5C22.9836 27.5 28.5801 21.9036 28.5801 15C28.5801 8.09644 22.9836 2.5 16.0801 2.5C9.17652 2.5 3.58008 8.09644 3.58008 15C3.58008 21.9036 9.17652 27.5 16.0801 27.5Z"
+                                    stroke="#848895" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16.0801 20L21.0801 15L16.0801 10" stroke="#848895" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M11.0801 15H21.0801" stroke="#848895" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                        </span>
+                    </div>
+                    </div> 
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 pt-4 pt-lg-0">
+                    <div class="box_bg_img box-bg-img-3 d-flex flex-column justify-content-end" data-aos="fade-up"
+                    data-aos-once="true" data-aos-duration="1500" data-aos-easing="ease-out-cubic">
+                    <div class="pb-3">
+                        <span class="mb-0 font-helvetica fs-11 fw-normal text-white chapters_17">
+                            12 Chapters
+                        </span>
+                    </div>
+                    <div class=" d-flex justify-content-between">
+                        <p class="mb-0 font-helvetica  line-25 fs-18 fw-normal text-white">
+                            Solana Bootcamp
+                        </p>
+                        <span class="cursor-pointer">
+                            <svg width="31" height="30" viewBox="0 0 31 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.0801 27.5C22.9836 27.5 28.5801 21.9036 28.5801 15C28.5801 8.09644 22.9836 2.5 16.0801 2.5C9.17652 2.5 3.58008 8.09644 3.58008 15C3.58008 21.9036 9.17652 27.5 16.0801 27.5Z"
+                                    stroke="#848895" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16.0801 20L21.0801 15L16.0801 10" stroke="#848895" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M11.0801 15H21.0801" stroke="#848895" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                        </span>
+                    </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 col-sm-6">
-                    <div class="box_bg_img d-flex flex-column justify-content-end mt-sm-0 mt-4" data-aos="fade-up"
-                        data-aos-once="true" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
-                        <div class="pb-3">
-                            <span class="mb-0 font-helvetica fs-11 fw-normal text-white chapters_17">
-                                12 Chapters
-                            </span>
-                        </div>
-                        <div class=" d-flex justify-content-between">
-                            <p class="mb-0 font-helvetica  line-25 fs-18 fw-normal text-white">
-                                Solana Bootcamp
-                            </p>
-                            <span>
-                                <svg width="31" height="30" viewBox="0 0 31 30" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M16.0801 27.5C22.9836 27.5 28.5801 21.9036 28.5801 15C28.5801 8.09644 22.9836 2.5 16.0801 2.5C9.17652 2.5 3.58008 8.09644 3.58008 15C3.58008 21.9036 9.17652 27.5 16.0801 27.5Z"
-                                        stroke="#848895" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M16.0801 20L21.0801 15L16.0801 10" stroke="#848895" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M11.0801 15H21.0801" stroke="#848895" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-
-                            </span>
-                        </div>
+                <div class="col-lg-4 col-sm-6 col-12 pt-4">
+                    <div class="box_bg_img box-bg-img-4 d-flex flex-column justify-content-end" data-aos="fade-up"
+                    data-aos-once="true" data-aos-duration="1500" data-aos-easing="ease-out-cubic">
+                    <div class="pb-3">
+                        <span class="mb-0 font-helvetica fs-11 fw-normal text-white chapters_17">
+                            167 Chapters
+                        </span>
                     </div>
-                    <div class="box_bg_img d-flex flex-column justify-content-end mt-4" data-aos="fade-up"
-                        data-aos-once="true" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
-                        <div class="pb-3">
-                            <span class="mb-0 font-helvetica fs-11 fw-normal text-white chapters_17">
-                                167 Chapters
-                            </span>
-                        </div>
-                        <div class=" d-flex justify-content-between">
-                            <p class="mb-0 font-helvetica  line-25 fs-18 fw-normal text-white">
-                                Solana Bytes
-                            </p>
-                            <span>
-                                <svg width="31" height="30" viewBox="0 0 31 30" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M16.0801 27.5C22.9836 27.5 28.5801 21.9036 28.5801 15C28.5801 8.09644 22.9836 2.5 16.0801 2.5C9.17652 2.5 3.58008 8.09644 3.58008 15C3.58008 21.9036 9.17652 27.5 16.0801 27.5Z"
-                                        stroke="#848895" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M16.0801 20L21.0801 15L16.0801 10" stroke="#848895" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M11.0801 15H21.0801" stroke="#848895" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
+                    <div class=" d-flex justify-content-between">
+                        <p class="mb-0 font-helvetica  line-25 fs-18 fw-normal text-white">
+                            Solana Bytes
+                        </p>
+                        <span class="cursor-pointer">
+                            <svg width="31" height="30" viewBox="0 0 31 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.0801 27.5C22.9836 27.5 28.5801 21.9036 28.5801 15C28.5801 8.09644 22.9836 2.5 16.0801 2.5C9.17652 2.5 3.58008 8.09644 3.58008 15C3.58008 21.9036 9.17652 27.5 16.0801 27.5Z"
+                                    stroke="#848895" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16.0801 20L21.0801 15L16.0801 10" stroke="#848895" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M11.0801 15H21.0801" stroke="#848895" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
 
-                            </span>
-                        </div>
+                        </span>
                     </div>
+                    </div>  
                 </div>
-                <div class="col-12 col-lg-4 col-sm-6 mt-lg-0 mt-4 d-flex flex-column justify-content-center">
-                    <div class="box_bg_img d-flex flex-column justify-content-end" data-aos="fade-left"
-                        data-aos-once="true" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                <div class="col-lg-4 col-sm-6 col-12 pt-4">
+                    <div class="box_bg_img box-bg-img-5 d-flex flex-column justify-content-end" data-aos="fade-left"
+                        data-aos-once="true" data-aos-duration="1500" data-aos-easing="ease-out-cubic">
                         <div class="pb-3">
                             <span class="mb-0 font-helvetica fs-11 fw-normal text-white chapters_17">
                                 1 Chapters
@@ -1164,7 +1184,7 @@
                             <p class="mb-0 font-helvetica  line-25 fs-18 fw-normal text-white">
                                 Scaffold Series
                             </p>
-                            <span>
+                            <span class="cursor-pointer">
                                 <svg width="31" height="30" viewBox="0 0 31 30" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -1179,8 +1199,10 @@
                             </span>
                         </div>
                     </div>
-                    <div class="box_bg_img d-flex flex-column justify-content-end mt-4" data-aos="fade-left"
-                        data-aos-once="true" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 pt-4">
+                    <div class="box_bg_img box-bg-img-6 d-flex flex-column justify-content-end" data-aos="fade-left"
+                        data-aos-once="true" data-aos-duration="1500" data-aos-easing="ease-out-cubic">
                         <div class="pb-3">
                             <span class="mb-0 font-helvetica  fs-11 fw-normal text-white chapters_17">
                                 8 Chapters
@@ -1190,7 +1212,7 @@
                             <p class="mb-0 font-helvetica fs-18 line-25 fw-normal text-white">
                                 Solana Bootcamp
                             </p>
-                            <span>
+                            <span class="cursor-pointer">
                                 <svg width="31" height="30" viewBox="0 0 31 30" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -1204,174 +1226,15 @@
 
                             </span>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="responsive overflow-hidden mt-5 d-lg-none">
-                <div class="box_bg_img d-flex flex-column justify-content-end mt-sm-0" data-aos="fade-up"
-                    data-aos-once="true" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
-                    <div class="pb-3">
-                        <span class="mb-0 font-helvetica fs-11 fw-normal text-white chapters_17">
-                            12 Chapters
-                        </span>
-                    </div>
-                    <div class=" d-flex justify-content-between">
-                        <p class="mb-0 font-helvetica line-25 fs-18 fw-normal text-white">
-                            Solana Bootcamp
-                        </p>
-                        <span>
-                            <svg width="31" height="30" viewBox="0 0 31 30" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M16.0801 27.5C22.9836 27.5 28.5801 21.9036 28.5801 15C28.5801 8.09644 22.9836 2.5 16.0801 2.5C9.17652 2.5 3.58008 8.09644 3.58008 15C3.58008 21.9036 9.17652 27.5 16.0801 27.5Z"
-                                    stroke="#848895" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M16.0801 20L21.0801 15L16.0801 10" stroke="#848895" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M11.0801 15H21.0801" stroke="#848895" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-
-                        </span>
-                    </div>
-                </div>
-                <div class="box_bg_img d-flex flex-column justify-content-end" data-aos="fade-up" data-aos-once="true"
-                    data-aos-duration="2000" data-aos-easing="ease-out-cubic">
-                    <div class="pb-3">
-                        <span class="mb-0 font-helvetica fs-11 fw-normal text-white chapters_17">
-                            167 Chapters
-                        </span>
-                    </div>
-                    <div class=" d-flex justify-content-between">
-                        <p class="mb-0 font-helvetica line-25 fs-18 fw-normal text-white">
-                            Solana Bytes
-                        </p>
-                        <span>
-                            <svg width="31" height="30" viewBox="0 0 31 30" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M16.0801 27.5C22.9836 27.5 28.5801 21.9036 28.5801 15C28.5801 8.09644 22.9836 2.5 16.0801 2.5C9.17652 2.5 3.58008 8.09644 3.58008 15C3.58008 21.9036 9.17652 27.5 16.0801 27.5Z"
-                                    stroke="#848895" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M16.0801 20L21.0801 15L16.0801 10" stroke="#848895" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M11.0801 15H21.0801" stroke="#848895" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-
-                        </span>
-                    </div>
-                </div>
-                <div class="box_bg_img d-flex flex-column justify-content-end" data-aos="fade-up" data-aos-once="true"
-                    data-aos-duration="2000" data-aos-easing="ease-out-cubic">
-                    <div class="pb-3">
-                        <span class="mb-0 font-helvetica fs-11 fw-normal text-white chapters_17">
-                            1 Chapters
-                        </span>
-                    </div>
-                    <div class=" d-flex justify-content-between">
-                        <p class="mb-0 font-helvetica line-25 fs-18 fw-normal text-white">
-                            Scaffold Series
-                        </p>
-                        <span>
-                            <svg width="31" height="30" viewBox="0 0 31 30" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M16.0801 27.5C22.9836 27.5 28.5801 21.9036 28.5801 15C28.5801 8.09644 22.9836 2.5 16.0801 2.5C9.17652 2.5 3.58008 8.09644 3.58008 15C3.58008 21.9036 9.17652 27.5 16.0801 27.5Z"
-                                    stroke="#848895" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M16.0801 20L21.0801 15L16.0801 10" stroke="#848895" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M11.0801 15H21.0801" stroke="#848895" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-
-                        </span>
-                    </div>
-                </div>
-                <div class="box_bg_img d-flex flex-column justify-content-end" data-aos="fade-up" data-aos-once="true"
-                    data-aos-duration="2000" data-aos-easing="ease-out-cubic">
-                    <div class="pb-3">
-                        <span class="mb-0 font-helvetica fs-11 fw-normal text-white chapters_17">
-                            8 Chapters
-                        </span>
-                    </div>
-                    <div class=" d-flex justify-content-between">
-                        <p class="mb-0 font-helvetica line-25 fs-18 fw-normal text-white">
-                            Solana Bootcamp
-                        </p>
-                        <span>
-                            <svg width="31" height="30" viewBox="0 0 31 30" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M16.0801 27.5C22.9836 27.5 28.5801 21.9036 28.5801 15C28.5801 8.09644 22.9836 2.5 16.0801 2.5C9.17652 2.5 3.58008 8.09644 3.58008 15C3.58008 21.9036 9.17652 27.5 16.0801 27.5Z"
-                                    stroke="#848895" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M16.0801 20L21.0801 15L16.0801 10" stroke="#848895" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M11.0801 15H21.0801" stroke="#848895" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-
-                        </span>
-                    </div>
-                </div>
-                <div class="box_bg_img d-flex flex-column justify-content-end" data-aos="fade-up" data-aos-once="true"
-                    data-aos-duration="2000" data-aos-easing="ease-out-cubic">
-                    <div class="pb-3">
-                        <span class="mb-0 font-helvetica fs-11 fw-normal text-white chapters_17">
-                            1 Chapters
-                        </span>
-                    </div>
-                    <div class=" d-flex justify-content-between">
-                        <p class="mb-0 font-helvetica line-25 fs-18 fw-normal text-white">
-                            Scaffold Series
-                        </p>
-                        <span>
-                            <svg width="31" height="30" viewBox="0 0 31 30" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M16.0801 27.5C22.9836 27.5 28.5801 21.9036 28.5801 15C28.5801 8.09644 22.9836 2.5 16.0801 2.5C9.17652 2.5 3.58008 8.09644 3.58008 15C3.58008 21.9036 9.17652 27.5 16.0801 27.5Z"
-                                    stroke="#848895" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M16.0801 20L21.0801 15L16.0801 10" stroke="#848895" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M11.0801 15H21.0801" stroke="#848895" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-
-                        </span>
-                    </div>
-                </div>
-                <div class="box_bg_img d-flex flex-column justify-content-end" data-aos="fade-up" data-aos-once="true"
-                    data-aos-duration="2000" data-aos-easing="ease-out-cubic">
-                    <div class="pb-3">
-                        <span class="mb-0 font-helvetica fs-11 fw-normal text-white chapters_17">
-                            8 Chapters
-                        </span>
-                    </div>
-                    <div class=" d-flex justify-content-between">
-                        <p class="mb-0 font-helvetica line-25 fs-18 fw-normal text-white">
-                            Solana Bootcamp
-                        </p>
-                        <span>
-                            <svg width="31" height="30" viewBox="0 0 31 30" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M16.0801 27.5C22.9836 27.5 28.5801 21.9036 28.5801 15C28.5801 8.09644 22.9836 2.5 16.0801 2.5C9.17652 2.5 3.58008 8.09644 3.58008 15C3.58008 21.9036 9.17652 27.5 16.0801 27.5Z"
-                                    stroke="#848895" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M16.0801 20L21.0801 15L16.0801 10" stroke="#848895" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M11.0801 15H21.0801" stroke="#848895" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-
-                        </span>
-                    </div>
-                </div>
-            </div>
+                    </div> 
+                </div>                                                                                                                    
+            </div>           
         </div>
     </section>
-
     <!-- rohit==code -->
     <section class="bg-black -mt-1  overflow-hidden">
         <div class="container max-w-1100">
-            <div data-aos="fade-right" data-aos-once="true" data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+            <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1500" data-aos-easing="ease-out-cubic">
                 <h2 class="font-helvetica fw-normal line-42 fs-36 text-white mb-0 text-sm-start text-center">Dig deeper.
                 </h2>
                 <h6 class="font-helvetica fw-normal line-27 fs-20 mb-0 gray-100 pt-1 text-sm-start text-center">Learn from
@@ -1381,7 +1244,7 @@
             <div class="row pt-32 pb-lg-100 pb-60">
                 <div class="col-lg-4  col-sm-6 col-12">
                     <div class="min-box position-relative z-1 d-flex  flex-column justify-content-between overflow-hidden"
-                        data-aos="fade-right" data-aos-once="true" data-aos-duration="2000"
+                        data-aos="fade-right" data-aos-once="true" data-aos-duration="1500"
                         data-aos-easing="ease-out-cubic">
                         <div class="d-flex flex-column ">
                             <h6 class="color-purple font-helvetica fw-normal line-15 fs-12 text-uppercase mb-0">tool /
@@ -1403,7 +1266,7 @@
                 </div>
                 <div class="col-lg-4  col-sm-6 col-12 pt-4 pt-sm-0">
                     <div class="min-box position-relative z-1 d-flex  flex-column justify-content-between overflow-hidden"
-                        data-aos="fade-up" data-aos-once="true" data-aos-duration="2000"
+                        data-aos="fade-up" data-aos-once="true" data-aos-duration="1500"
                         data-aos-easing="ease-out-cubic">
                         <div class="d-flex flex-column">
                             <h6 class="color-purple font-helvetica fw-normal line-15 fs-12 text-uppercase mb-0">tool /
@@ -1425,7 +1288,7 @@
                 </div>
                 <div class="col-lg-4  col-sm-6 col-12 pt-4 pt-lg-0">
                     <div class="min-box position-relative z-1 d-flex  flex-column justify-content-between overflow-hidden"
-                        data-aos="fade-left" data-aos-once="true" data-aos-duration="2000"
+                        data-aos="fade-left" data-aos-once="true" data-aos-duration="1500"
                         data-aos-easing="ease-out-cubic">
                         <div class="d-flex flex-column">
                             <h6 class="color-purple font-helvetica fw-normal line-15 fs-12 text-uppercase mb-0">tool /
@@ -1447,7 +1310,7 @@
                 </div>
                 <div class="col-lg-4  col-sm-6 col-12 pt-4">
                     <div class="min-box position-relative z-1 d-flex  flex-column justify-content-between overflow-hidden"
-                        data-aos="fade-right" data-aos-once="true" data-aos-duration="2000"
+                        data-aos="fade-right" data-aos-once="true" data-aos-duration="1500"
                         data-aos-easing="ease-out-cubic">
                         <div class="d-flex flex-column">
                             <h6 class="color-purple font-helvetica fw-normal line-15 fs-12 text-uppercase mb-0">tool /
@@ -1468,7 +1331,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6 col-12 pt-4">
                     <div class="min-box position-relative z-1 d-flex  flex-column justify-content-between overflow-hidden"
-                        data-aos="fade-up" data-aos-once="true" data-aos-duration="2000"
+                        data-aos="fade-up" data-aos-once="true" data-aos-duration="1500"
                         data-aos-easing="ease-out-cubic">
                         <div class="d-flex flex-column">
                             <h6 class="color-purple font-helvetica fw-normal line-15 fs-12 text-uppercase mb-0">tool /
@@ -1490,7 +1353,7 @@
                 </div>
                 <div class="col-lg-4  col-sm-6 col-12 pt-4">
                     <div class="min-box position-relative z-1 d-flex flex-column justify-content-between overflow-hidden"
-                        data-aos="fade-left" data-aos-once="true" data-aos-duration="2000"
+                        data-aos="fade-left" data-aos-once="true" data-aos-duration="1500"
                         data-aos-easing="ease-out-cubic">
                         <div class="d-flex flex-column">
                             <h6 class="color-purple font-helvetica fw-normal line-15 fs-12 text-uppercase mb-0">tool /
@@ -1512,7 +1375,7 @@
                 </div>
                 <div class="col-lg-4  col-sm-6 col-12 pt-4">
                     <div class="min-box position-relative z-1 d-flex  flex-column justify-content-between overflow-hidden"
-                        data-aos="fade-right" data-aos-once="true" data-aos-duration="2000"
+                        data-aos="fade-right" data-aos-once="true" data-aos-duration="1500"
                         data-aos-easing="ease-out-cubic">
                         <div class="d-flex flex-column">
                             <h6 class="color-purple font-helvetica fw-normal line-15 fs-12 text-uppercase mb-0">tool /
@@ -1535,7 +1398,7 @@
                 </div>
                 <div class="col-lg-4  col-sm-6 col-12 pt-4">
                     <div class="min-box position-relative z-1 d-flex  flex-column justify-content-between overflow-hidden"
-                        data-aos="fade-up" data-aos-once="true" data-aos-duration="2000"
+                        data-aos="fade-up" data-aos-once="true" data-aos-duration="1500"
                         data-aos-easing="ease-out-cubic">
                         <div class="d-flex flex-column">
                             <h6 class="color-purple font-helvetica fw-normal line-15 fs-12 text-uppercase mb-0">tool /
@@ -1560,7 +1423,7 @@
     <section class="bg-black -mt-1 position-relative overflow-hidden">
         <div class="gradient-box w-100 position-absolute d-block z-0"></div>
         <div class="container max-w-1100">
-            <div class="pt-76 position-relative z-1" data-aos="fade-right" data-aos-once="true" data-aos-duration="2000"
+            <div class="pt-76 position-relative z-1" data-aos="fade-right" data-aos-once="true" data-aos-duration="1500"
                 data-aos-easing="ease-out-cubic">
                 <h2 class="font-helvetica fw-normal line-42 fs-36 text-white mb-0 text-sm-start text-center">Go to the
                     source.</h2>
@@ -1570,7 +1433,7 @@
             </div>
             <div class="row pt-5">
                 <div class="col-md-6 col-12 z-1 pe-md-4" data-aos="zoom-in-right" data-aos-once="true"
-                    data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                    data-aos-duration="1500" data-aos-easing="ease-out-cubic">
                     <div class="d-flex justify-content-between bottom-border pb-31 max-w-md-522">
                         <h3 class="font-helvetica fw-normal line-32 fs-32 text-white mb-0">Solana Docs</h3>
                         <button
@@ -1582,7 +1445,7 @@
                         get a high-level understanding of Solana's architecture.</h5>
                 </div>
                 <div class="col-md-6 col-12 pt-5 ps-md-4 pt-md-0 z-1" data-aos="zoom-in-left" data-aos-once="true"
-                    data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                    data-aos-duration="1500" data-aos-easing="ease-out-cubic">
                     <div class="d-flex justify-content-between bottom-border pb-31 max-w-md-522">
                         <h3 class="font-helvetica fw-normal line-32 fs-32 text-white mb-0">Metaplex Docs</h3>
                         <button
@@ -1596,7 +1459,7 @@
             </div>
             <div class="row pt-144 flex-wrap-reverse ">
                 <div class="col-md-6 col-12 pt-4 pt-md-0 z-1" data-aos="zoom-out-right" data-aos-once="true"
-                    data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                    data-aos-duration="1500" data-aos-easing="ease-out-cubic">
                     <h3 class="mb-0 font-helvetica line-42 fs-38 text-white  fw-medium">Solana Changelog</h3>
                     <h5 class="mb-0 font-helvetica line-27 fs-20  pt-29 text-white max-w-md-503">Some more Solana changes
                         from Jacob &
@@ -1606,13 +1469,13 @@
                         class="latest-btn mt-57 font-Roboto fw-normal line-21 fs-15 text-white d-flex gap-10 bg-transparent transition-300 align-items-center">LATEST
                         EPISODE <img src="./assets/images/svg/uparrow.svg" alt="arrow" class="transition-300"></button>
                 </div>
-                <div class="col-md-6 col-12 z-1" data-aos="zoom-out-left" data-aos-once="true" data-aos-duration="2000"
+                <div class="col-md-6 col-12 z-1" data-aos="zoom-out-left" data-aos-once="true" data-aos-duration="1500"
                     data-aos-easing="ease-out-cubic">
                     <img src="./assets/images/IMAGE.png" alt="IMAGE" class="w-100">
                 </div>
             </div>
             <div class="row pt-sm-133 pb-80 pt-60 ">
-                <div class="col-md-6 col-12 z-1" data-aos="flip-left" data-aos-once="true" data-aos-duration="2000"
+                <div class="col-md-6 col-12 z-1" data-aos="flip-left" data-aos-once="true" data-aos-duration="1500"
                     data-aos-easing="ease-out-cubic">
                     <div class="last-section-box d-flex flex-column justify-content-between">
                         <div class="d-flex flex-column">
@@ -1631,7 +1494,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-12 pt-4 pt-md-0 z-1" data-aos="flip-right" data-aos-once="true"
-                    data-aos-duration="2000" data-aos-easing="ease-out-cubic">
+                    data-aos-duration="1500" data-aos-easing="ease-out-cubic">
                     <div class="last-section-box d-flex flex-column justify-content-between">
                         <div class="d-flex flex-column">
                             <h4 class="mb-0 font-helvetica fw-normal line-37 fs-36 text-white">Even more resources</h4>

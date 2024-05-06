@@ -193,6 +193,7 @@
 
 .firstslider .slick-list {
   margin: 0 -10px;
+  padding-top: 5px;
 }
 
 .slider-item:hover {
@@ -289,10 +290,8 @@
   display: none;
   flex-direction: column;
   padding-left: 4px;
-  background-color: var(--black-100);
-  /* opacity: 80%; */
+  background-color: var(--black-100);  
   width: 100%;
-
   z-index: 1;
 }
 
@@ -595,7 +594,23 @@
   }
 
   .pt-lg-164 {
-    padding-top: 164px;
+    padding-top: 164px !important;
   }
+  .max-w-lg-255{
+    max-width: 255px !important;
+  }
+  .max-w-lg-260{
+    max-width: 260px !important;  
+  }
+  .max-w-lg-248{
+    max-width: 248px !important;
+  }
+ 
+}
+@media (min-width:1400px) {
+  .main-img{
+    transform: translateX(98px);
+  }
+  
 }
 
